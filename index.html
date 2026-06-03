@@ -1579,20 +1579,15 @@ body.present-mode #present-arrows { display:flex !important; }
       <p style="font-size:20px;line-height:1.7;font-weight:300;color:var(--muted);max-width:600px;" data-en="After years away from the stage, Gims's return to Paris has stirred millions of fans eager to see him live again. Magical moments for the fans already counting the days." data-fr="Après des années loin de la scène, le retour de Gims à Paris a passionné des millions de fans qui veulent le retrouver en live. Des moments magiques pour ses fans qui s'impatientent déjà.">
         After years away from the stage, Gims's return to Paris has stirred millions of fans eager to see him live again. Magical moments for the fans already counting the days.
       </p>
-      <p style="font-size:20px;line-height:1.7;font-weight:400;color:rgba(255,255,255,0.8);max-width:600px;" data-en="Magic, or how you reward that passion." data-fr="Magic ou comment récompenser cette passion.">
-        Magic, or how you reward that passion.
-      </p>
       <p style="font-size:18px;line-height:1.6;font-weight:400;color:rgba(255,255,255,0.7);max-width:600px;" data-en="La Défense in December is the trigger. Magic is what turns two nights into a fandom that keeps going." data-fr="La Défense en décembre, c'est le déclencheur. Magic, c'est ce qui transforme deux soirs en un fandom qui dure.">
         La Défense in December is the trigger. Magic is what turns two nights into a fandom that keeps going.
       </p>
       <p style="font-size:22px;font-weight:700;color:rgba(255,255,255,0.8);letter-spacing:0.03em;" data-en="This is his Fanverse." data-fr="Voici le Fanverse de Gims.">This is his Fanverse.</p>
     </div>
 
-    <!-- Hero media — full bleed right, fade left -->
+    <!-- Hero media — TODO: swap placeholder for a real Gims hero image. Currently using a leftover Celine-era still as placeholder. Same mask/styling as Toto s1. -->
     <div id="s1-hero-media" style="position:absolute;top:0;right:0;bottom:0;width:55%;overflow:hidden;">
-      <video id="s1-video" autoplay loop muted playsinline webkit-playsinline preload="auto" disablePictureInPicture style="width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:translateX(6%);-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);">
-        <source src="Assets/welcome-gims.mov" type="video/mp4">
-      </video>
+      <img id="s1-hero-img" src="Assets/Deck Edits/67960554_10156312576851651_857208479381716992_n.jpg" alt="Gims (placeholder — replace with real Gims hero image)" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);">
       <div aria-hidden="true" style="position:absolute;inset:0;background:rgba(31,120,255,0.45);mix-blend-mode:color;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);"></div>
       <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.5) 30%,rgba(13,27,66,0.2) 45%,transparent 60%,transparent 75%,rgba(13,27,66,0.95) 100%);pointer-events:none;"></div>
       <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse 55% 100% at 100% 50%, rgba(13,27,66,0.75) 0%, rgba(13,27,66,0.25) 45%, transparent 75%);pointer-events:none;"></div>
@@ -2446,7 +2441,7 @@ body.present-mode #present-arrows { display:flex !important; }
   <div style="position:absolute;inset:0;display:flex;align-items:center;padding:80px 80px 80px 100px;gap:60px;">
     <!-- Left: Text -->
     <div style="flex:1;display:flex;flex-direction:column;gap:24px;">
-      <span class="tag" data-en="And the heart goes on" data-fr="And the heart goes on">And the heart goes on</span>
+      <span class="tag" data-en="Fan love" data-fr="L'amour des fans">Fan love</span>
       <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.02em;" data-i18n="html" data-en-html="They show up for you.<br><span class='gt'>Now show up for them.</span>" data-fr-html="Ils sont là pour vous.<br><span class='gt'>À vous de leur rendre.</span>">
         They show up for you.<br><span class="gt">Now show up for them.</span>
       </div>
@@ -2455,65 +2450,10 @@ body.present-mode #present-arrows { display:flex !important; }
         A Fanverse is built for the top percent of your fanbase: the ones who stream every track, show up to every show, and never miss a drop. Ticket in hand or not, Magic makes their loyalty finally mean something.
       </p>
       <p style="font-size:22px;font-weight:700;letter-spacing:0.03em;" data-i18n="html" data-en-html="This is your Fanverse. <span style='color:#fff'>They've earned it.</span>" data-fr-html="Voici votre Fanverse. <span style='color:#fff'>Ils l'ont mérité.</span>">This is your Fanverse. <span style="color:#fff">They've earned it.</span></p>
-      <div style="margin-top:28px;position:relative;border-radius:18px;padding:2px;max-width:580px;animation:takeawayPulse 3s ease-in-out infinite;">
-        <div style="position:absolute;inset:0;border-radius:18px;border:3px solid transparent;background:linear-gradient(var(--border-angle,0deg),rgba(31,206,255,0.8),rgba(140,60,255,0.7),rgba(140,60,255,0.8),rgba(31,206,255,0.8)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderShift 8s linear infinite;z-index:2;pointer-events:none;"></div>
-        <div style="padding:22px 26px;background:linear-gradient(140deg,rgba(31,206,255,0.08) 0%,rgba(140,60,255,0.14) 100%);border-radius:16px;position:relative;z-index:3;">
-          <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#1FCEFF;margin-bottom:10px;" data-en="✦ One more thing" data-fr="✦ Et en plus">✦ One more thing</div>
-          <p style="font-size:14px;line-height:1.55;font-weight:300;color:rgba(255,255,255,0.85);margin:0;" data-i18n="html" data-en-html="A surprise Gims party in Paris for the <span style='color:#fff;font-weight:700'>1,500 most devoted fans</span> who couldn't get a ticket. Organised by Magic to bring his top fans together, with a video message from Gims to thank them." data-fr-html="Une party surprise Gims à Paris pour les <span style='color:#fff;font-weight:700'>1 500 fans les plus dévoués</span> qui n'ont pas pu avoir de billet. Organisée par Magic pour réunir ses plus grands fans, avec un message vidéo de Gims pour les remercier.">A surprise Gims party in Paris for the <span style="color:#fff;font-weight:700">1,500 most devoted fans</span> who couldn't get a ticket. Organised by Magic to bring his top fans together, with a video message from Gims to thank them.</p>
-        </div>
-      </div>
     </div>
-    <!-- Right: Pulsating Heart -->
-    <div style="flex:0 0 420px;display:flex;align-items:center;justify-content:center;position:relative;overflow:visible;transform:translate(-80px, 50px);">
-      <!-- Pulsating heart-shaped rings -->
-      <svg width="220" height="200" viewBox="0 0 220 200" style="position:absolute;animation:heartRing 4s ease-out infinite;pointer-events:none;will-change:transform;">
-        <path d="M110 180 C50 130 0 90 0 55 0 25 25 0 55 0 75 0 95 15 110 35 125 15 145 0 165 0 195 0 220 25 220 55 220 90 170 130 110 180Z" fill="none" stroke="rgba(140,60,255,0.5)" stroke-width="2"/>
-      </svg>
-      <svg width="220" height="200" viewBox="0 0 220 200" style="position:absolute;animation:heartRing 4s ease-out 1.33s infinite;pointer-events:none;will-change:transform;">
-        <path d="M110 180 C50 130 0 90 0 55 0 25 25 0 55 0 75 0 95 15 110 35 125 15 145 0 165 0 195 0 220 25 220 55 220 90 170 130 110 180Z" fill="none" stroke="rgba(31,206,255,0.4)" stroke-width="2"/>
-      </svg>
-      <svg width="220" height="200" viewBox="0 0 220 200" style="position:absolute;animation:heartRing 4s ease-out 2.66s infinite;pointer-events:none;will-change:transform;">
-        <path d="M110 180 C50 130 0 90 0 55 0 25 25 0 55 0 75 0 95 15 110 35 125 15 145 0 165 0 195 0 220 25 220 55 220 90 170 130 110 180Z" fill="none" stroke="rgba(140,60,255,0.35)" stroke-width="2"/>
-      </svg>
-      <!-- Ambient glow behind heart -->
-      <div style="position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(140,60,255,0.2) 0%,rgba(31,206,255,0.1) 40%,transparent 70%);animation:heartGlow 2.5s ease-in-out infinite;pointer-events:none;"></div>
-      <!-- Heart SVG -->
-      <svg width="220" height="200" viewBox="0 0 220 200" style="animation:heartPulse 2.5s ease-in-out infinite;will-change:transform;">
-        <defs>
-          <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#8C3CFF"/>
-            <stop offset="100%" stop-color="#1FCEFF"/>
-          </linearGradient>
-        </defs>
-        <path d="M110 180 C50 130 0 90 0 55 0 25 25 0 55 0 75 0 95 15 110 35 125 15 145 0 165 0 195 0 220 25 220 55 220 90 170 130 110 180Z" fill="url(#heartGrad)" opacity="0.9"/>
-      </svg>
-      <!-- Twinkling stars — wide circumference around heart -->
-      <!-- Top arc -->
-      <div style="position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;top:-12%;left:20%;opacity:0.5;animation:starTwinkle 2.9s ease-in-out 0.2s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#1FCEFF;top:-8%;left:48%;opacity:0.45;animation:starTwinkle 3.4s ease-in-out 1.8s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;top:-15%;left:70%;opacity:0.4;animation:starTwinkle 2.2s ease-in-out infinite;"></div>
-      <div style="position:absolute;width:3px;height:3px;border-radius:50%;background:#8C3CFF;top:-5%;left:90%;opacity:0.45;animation:starTwinkle 3.7s ease-in-out 1.0s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;top:-10%;left:5%;opacity:0.35;animation:starTwinkle 3.1s ease-in-out 0.5s infinite;"></div>
-      <!-- Upper sides -->
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;top:10%;left:-10%;opacity:0.4;animation:starTwinkle 2.5s ease-in-out 1.5s infinite;"></div>
-      <div style="position:absolute;width:3px;height:3px;border-radius:50%;background:#1FCEFF;top:8%;left:108%;opacity:0.5;animation:starTwinkle 3.0s ease-in-out 0.7s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;top:20%;left:-15%;opacity:0.35;animation:starTwinkle 2.1s ease-in-out 0.6s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;top:18%;left:112%;opacity:0.45;animation:starTwinkle 3.5s ease-in-out 0.3s infinite;"></div>
-      <!-- Middle sides -->
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#8C3CFF;top:38%;left:-18%;opacity:0.4;animation:starTwinkle 2.6s ease-in-out 1.1s infinite;"></div>
-      <div style="position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;top:42%;left:115%;opacity:0.4;animation:starTwinkle 2.7s ease-in-out 2.0s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;top:52%;left:-12%;opacity:0.3;animation:starTwinkle 3.3s ease-in-out 0.4s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#1FCEFF;top:48%;left:110%;opacity:0.35;animation:starTwinkle 2.4s ease-in-out 1.7s infinite;"></div>
-      <!-- Lower sides -->
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;bottom:18%;left:-8%;opacity:0.3;animation:starTwinkle 3.0s ease-in-out 0.9s infinite;"></div>
-      <div style="position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;bottom:22%;left:108%;opacity:0.4;animation:starTwinkle 3.6s ease-in-out 0.5s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#8C3CFF;bottom:12%;left:-14%;opacity:0.4;animation:starTwinkle 2.8s ease-in-out 1.3s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;bottom:15%;left:112%;opacity:0.5;animation:starTwinkle 2.3s ease-in-out 1.4s infinite;"></div>
-      <!-- Bottom arc -->
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;bottom:-8%;left:15%;opacity:0.4;animation:starTwinkle 1.9s ease-in-out 0.8s infinite;"></div>
-      <div style="position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;bottom:-12%;left:45%;opacity:0.35;animation:starTwinkle 3.2s ease-in-out 0.3s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#1FCEFF;bottom:-6%;left:72%;opacity:0.4;animation:starTwinkle 2.8s ease-in-out 1.2s infinite;"></div>
-      <div style="position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;bottom:-10%;left:88%;opacity:0.3;animation:starTwinkle 3.5s ease-in-out 0.6s infinite;"></div>
+    <!-- Right: Gims image — TODO: swap placeholder for a real Gims artist photo. Currently using a leftover Celine-era photo as placeholder. Same mask/styling as s1. -->
+    <div style="position:absolute;top:0;right:0;bottom:0;width:55%;overflow:hidden;">
+      <img src="Assets/Deck Edits/67960554_10156312576851651_857208479381716992_n.jpg" alt="Gims (placeholder — replace with real Gims photo)" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);">
     </div>
   </div>
 </div>
