@@ -1681,168 +1681,131 @@ body.present-mode #present-arrows { display:flex !important; }
 <!-- ═══════════════════════════════════════
   S7 — MAKE EVERY MOMENT BIGGER
 ═══════════════════════════════════════ -->
+<style>
+  #s7 .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;z-index:2;}
+  #s7 .chartwrap{flex:1;display:flex;align-items:center;justify-content:center;margin-top:12px;}
+  #s7 .chartwrap svg{width:100%;height:auto;max-height:560px;}
+  #s7 .clegend{display:flex;gap:18px;align-items:center;justify-content:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.6);margin-top:6px;}
+  #s7 .h{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
+  #s7 .sub{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:920px;line-height:1.65;}
+</style>
 <div class="slide" id="s7">
-<div class="si">
-  <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">04 / 10</div>
+<div class="si" style="background:#0D1B42">
+  <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
+  <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">04 / 10</div>
 
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;">
-    <div style="flex-shrink:0;margin-bottom:18px;">
-      <span class="tag" data-en="No fan left behind" data-fr="Aucun fan oublié">No fan left behind</span>
-      <div style="margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.02em;" data-i18n="html" data-en-html="Every fan has <span class='gt'>a place</span>" data-fr-html="Chaque fan a <span class='gt'>sa place</span>">
-        Every fan has <span class="gt">a place</span>
-      </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:620px;" data-en="~80K tickets. Millions of fans. Magic turns that frustration into a stage for everyone, with or without a ticket." data-fr="~80K billets. Des millions de fans. Magic transforme cette frustration en une scène pour tous, avec ou sans billet.">
-        ~80K tickets. Millions of fans. Magic turns that frustration into a stage for everyone, with or without a ticket.
-      </p>
+  <div class="pad">
+    <div style="flex-shrink:0;">
+      <span class="tag tag-pu" data-en="Momentum" data-fr="Momentum">Momentum</span>
+      <div class="h" data-i18n="html" data-en-html="Make every moment <span class='gt'>bigger.</span>" data-fr-html="Faire de chaque moment <span class='gt'>un événement.</span>">Make every moment <span class="gt">bigger.</span></div>
+      <p class="sub" data-en="Magic turns the Carpe Diem tour and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year." data-fr="Magic transforme la tournée Carpe Diem et tout ce qui l'entoure en expériences fans qui génèrent plus de portée, plus de ventes, plus d'engagement. Moins de creux, du momentum toute l'année.">Magic turns the Carpe Diem tour and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year.</p>
     </div>
-    <!-- Timeline: single track, Before / During / After the concerts -->
-    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:0;">
-      <svg width="100%" height="100%" viewBox="0 0 1340 395" preserveAspectRatio="xMidYMid meet" fill="none">
+    <div class="chartwrap">
+      <svg viewBox="0 0 1340 395" preserveAspectRatio="xMidYMid meet" fill="none" style="width:100%;height:auto;">
         <defs>
-          <linearGradient id="tlg" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#0082FF"/><stop offset="100%" stop-color="#1FCEFF"/>
-          </linearGradient>
-          <linearGradient id="tlf" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#1FCEFF" stop-opacity="0.55"/><stop offset="100%" stop-color="#0082FF" stop-opacity="0"/>
-          </linearGradient>
-          <linearGradient id="trd-fill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/><stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
-          </linearGradient>
+          <linearGradient id="tlg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0082FF"/><stop offset="100%" stop-color="#1FCEFF"/></linearGradient>
+          <linearGradient id="tlf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1FCEFF" stop-opacity="0.55"/><stop offset="100%" stop-color="#0082FF" stop-opacity="0"/></linearGradient>
+          <linearGradient id="trd-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.22)"/><stop offset="100%" stop-color="rgba(255,255,255,0.01)"/></linearGradient>
         </defs>
-
-        <!-- Baseline -->
         <line x1="20" y1="210" x2="1320" y2="210" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-
-        <!-- FANS ALSO IN THE VENUE — rounded bump under the 2 nights only -->
-        <path d="M 20 210 L 380 210 C 440 210, 462 170, 520 170 L 950 170 C 1008 170, 1030 210, 1090 210 L 1320 210 Z"
-          fill="url(#trd-fill)"/>
-        <path d="M 20 210 L 380 210 C 440 210, 462 170, 520 170 L 950 170 C 1008 170, 1030 210, 1090 210 L 1320 210"
-          stroke="rgba(255,255,255,0.32)" stroke-width="1.6" fill="none"/>
-
-        <!-- FANS WELCOMED IN MAGIC — ramps up before, peaks during, tapers after -->
-        <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 620 50, 720 36, 780 34 C 840 42, 920 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140 L 1320 210 L 20 210 Z"
-          fill="url(#tlf)" opacity="0.55"/>
-        <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 620 50, 720 36, 780 34 C 840 42, 920 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140"
-          stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
-
-
-        <!-- Tick connectors from dots to icons (dashed, phase-colored) -->
+        <path d="M 20 205 C 28.3 204.7, 45.8 204.0, 70 203 C 94.2 202.0, 132.5 200.3, 165 199 C 197.5 197.7, 231.7 196.3, 265 195 C 298.3 193.7, 331.7 192.3, 365 191 C 398.3 189.7, 431.7 188.5, 465 187 C 498.3 185.5, 531.7 184.8, 565 182 C 598.3 179.2, 633.3 178.3, 665 170 C 696.7 161.7, 727.5 146.0, 755 132 C 782.5 118.0, 806.7 97.2, 830 86 C 853.3 74.8, 872.5 64.3, 895 65 C 917.5 65.7, 935.0 74.8, 965 90 C 995.0 105.2, 1041.7 140.7, 1075 156 C 1108.3 171.3, 1133.3 176.0, 1165 182 C 1196.7 188.0, 1239.2 189.8, 1265 192 C 1290.8 194.2, 1310.8 194.5, 1320 195 L 1320 210 L 20 210 Z" fill="url(#trd-fill)"/>
+        <path d="M 20 205 C 28.3 204.7, 45.8 204.0, 70 203 C 94.2 202.0, 132.5 200.3, 165 199 C 197.5 197.7, 231.7 196.3, 265 195 C 298.3 193.7, 331.7 192.3, 365 191 C 398.3 189.7, 431.7 188.5, 465 187 C 498.3 185.5, 531.7 184.8, 565 182 C 598.3 179.2, 633.3 178.3, 665 170 C 696.7 161.7, 727.5 146.0, 755 132 C 782.5 118.0, 806.7 97.2, 830 86 C 853.3 74.8, 872.5 64.3, 895 65 C 917.5 65.7, 935.0 74.8, 965 90 C 995.0 105.2, 1041.7 140.7, 1075 156 C 1108.3 171.3, 1133.3 176.0, 1165 182 C 1196.7 188.0, 1239.2 189.8, 1265 192 C 1290.8 194.2, 1310.8 194.5, 1320 195" stroke="rgba(255,255,255,0.25)" stroke-width="1.6" fill="none"/>
+        <path d="M 20 173.6 C 26.7 173.3, 50.7 172.6, 70 171.5 C 89.3 170.4, 139.0 167.5, 165 165.2 C 191.0 162.9, 238.3 157.8, 265 154.1 C 291.7 150.4, 338.3 142.5, 365 137.2 C 391.7 131.9, 438.3 121.2, 465 114.7 C 491.7 108.2, 538.3 95.2, 565 88.2 C 591.7 81.2, 639.7 68.0, 665 61.9 C 690.3 55.8, 733.0 46.6, 755 42.7 C 777.0 38.8, 811.3 34.5, 830 32.8 C 848.7 31.1, 877.0 29.9, 895 30.0 C 913.0 30.1, 941.0 30.6, 965 33.3 C 989.0 36.0, 1048.3 45.3, 1075 50.5 C 1101.7 55.7, 1139.7 65.6, 1165 72.1 C 1190.3 78.6, 1244.3 93.6, 1265 99.1 C 1285.7 104.6, 1312.7 111.5, 1320 113.4 L 1320 210 L 20 210 Z" fill="url(#tlf)" opacity="0.45"/>
+        <path d="M 20 173.6 C 26.7 173.3, 50.7 172.6, 70 171.5 C 89.3 170.4, 139.0 167.5, 165 165.2 C 191.0 162.9, 238.3 157.8, 265 154.1 C 291.7 150.4, 338.3 142.5, 365 137.2 C 391.7 131.9, 438.3 121.2, 465 114.7 C 491.7 108.2, 538.3 95.2, 565 88.2 C 591.7 81.2, 639.7 68.0, 665 61.9 C 690.3 55.8, 733.0 46.6, 755 42.7 C 777.0 38.8, 811.3 34.5, 830 32.8 C 848.7 31.1, 877.0 29.9, 895 30.0 C 913.0 30.1, 941.0 30.6, 965 33.3 C 989.0 36.0, 1048.3 45.3, 1075 50.5 C 1101.7 55.7, 1139.7 65.6, 1165 72.1 C 1190.3 78.6, 1244.3 93.6, 1265 99.1 C 1285.7 104.6, 1312.7 111.5, 1320 113.4" stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
         <g stroke-dasharray="2 3" stroke-width="1" fill="none">
-          <line x1="125" y1="180" x2="125" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="225" y1="172" x2="225" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="325" y1="156" x2="325" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="600" y1="59" x2="600" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="510" y1="76" x2="510" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="690" y1="46" x2="690" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="780" y1="38" x2="780" y2="231" stroke="rgba(140,60,255,0.45)"/>
-          <line x1="870" y1="51" x2="870" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="960" y1="66" x2="960" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="1085" y1="96" x2="1085" y2="232" stroke="rgba(32,212,184,0.35)"/>
-          <line x1="1180" y1="119" x2="1180" y2="232" stroke="rgba(32,212,184,0.35)"/>
-          <line x1="1270" y1="136" x2="1270" y2="232" stroke="rgba(32,212,184,0.35)"/>
+          <line x1="70" y1="172" x2="70" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="165" y1="165" x2="165" y2="234" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="265" y1="154" x2="265" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="365" y1="137" x2="365" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="465" y1="115" x2="465" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="565" y1="88" x2="565" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="665" y1="62" x2="665" y2="234" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="755" y1="43" x2="755" y2="234" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="830" y1="33" x2="830" y2="234" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="895" y1="30" x2="895" y2="234" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="965" y1="33" x2="965" y2="234" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="1075" y1="51" x2="1075" y2="234" stroke="rgba(32,212,184,0.3)"/>
+          <line x1="1165" y1="72" x2="1165" y2="234" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="1265" y1="99" x2="1265" y2="234" stroke="rgba(0,130,255,0.3)"/>
         </g>
+        <circle cx="70" cy="172" r="4.5" fill="#1FCEFF"/>
+        <circle cx="165" cy="165" r="4.5" fill="#FFC832"/>
+        <circle cx="265" cy="154" r="4.5" fill="#1FCEFF"/>
+        <circle cx="365" cy="137" r="4.5" fill="#1FCEFF"/>
+        <circle cx="465" cy="115" r="4.5" fill="#1FCEFF"/>
+        <circle cx="565" cy="88" r="4.5" fill="#1FCEFF"/>
+        <circle cx="665" cy="62" r="5" fill="#FFC832"/>
+        <circle cx="755" cy="43" r="5" fill="#FFC832"/>
+        <circle cx="830" cy="33" r="5" fill="#1FCEFF"/>
+        <circle cx="895" cy="30" r="5.5" fill="#FD3E84"/>
+        <circle cx="965" cy="33" r="5" fill="#FD3E84"/>
+        <circle cx="1075" cy="51" r="5" fill="#20D4B8"/>
+        <circle cx="1165" cy="72" r="4.5" fill="#FD3E84"/>
+        <circle cx="1265" cy="99" r="4.5" fill="#0082FF"/>
+        <text x="70" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Quest</text>
+        <text x="165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Invite Friends</text>
+        <text x="265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Lens</text>
+        <text x="365" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan Faves</text>
+        <text x="465" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Talent Faves</text>
+        <text x="565" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Events</text>
+        <text x="665" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Tickets</text>
+        <text x="755" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Mystery Box</text>
+        <text x="830" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan Meet</text>
+        <text x="895" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Store</text>
+        <text x="965" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Collectibles</text>
+        <text x="1075" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Unlimited</text>
+        <text x="1165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Merch</text>
+        <text x="1265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Music</text>
 
-        <!-- Dots on Magic line -->
-        <circle cx="125" cy="177" r="4.5" fill="#1FCEFF"/><!-- Leaderboard -->
-        <circle cx="225" cy="168" r="5.5" fill="#1FCEFF"/><!-- Devotion leaderboard (anchor) -->
-        <circle cx="325" cy="152" r="4.5" fill="#1FCEFF"/><!-- Watch party -->
-        <circle cx="600" cy="55" r="4.5" fill="#8C3CFF"/><!-- Exclusive drops (now During) -->
-        <circle cx="510" cy="72" r="5" fill="#8C3CFF"/><!-- Opening night -->
-        <circle cx="690" cy="42" r="5.5" fill="#8C3CFF"/><!-- Paris treasure hunt (anchor) -->
-        <circle cx="780" cy="34" r="5.5" fill="#8C3CFF"/><!-- Treasure hunt (peak) -->
-        <circle cx="870" cy="47" r="5" fill="#8C3CFF"/><!-- Live votes -->
-        <circle cx="960" cy="62" r="5" fill="#8C3CFF"/><!-- Backstage drops -->
-        <circle cx="1085" cy="92" r="5.5" fill="#20D4B8"/><!-- Monthly drops (anchor) -->
-        <circle cx="1180" cy="115" r="4.5" fill="#20D4B8"/><!-- Surprise drops -->
-        <circle cx="1270" cy="132" r="4.5" fill="#20D4B8"/><!-- Fan reunion -->
-
-        <!-- ICONS row -->
         <g transform="translate(0,10)">
-        <!-- Before (amber) — Ticket lottery ✦ / Memory wall ♥ / Throwback night ▶ / Exclusive drops ✦ -->
-        <g><circle cx="125" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="125" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
-        <g><circle cx="225" cy="236" r="13" fill="rgba(31,206,255,0.18)" stroke="rgba(31,206,255,0.55)" stroke-width="1"/><text x="225" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="15" font-weight="700">♥</text></g>
-        <g><circle cx="325" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="327" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
-        <g><circle cx="600" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="600" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
-        <!-- During (magenta) — Opening night ▶ / Watch party ▶ / Song dedication ♥ (peak) / Live votes ✦ / Backstage drops ✦ -->
-        <g><circle cx="510" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="512" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
-        <g><circle cx="690" cy="236" r="13" fill="rgba(140,60,255,0.18)" stroke="rgba(140,60,255,0.55)" stroke-width="1"/><text x="690" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">✦</text></g>
-        <g><circle cx="780" cy="236" r="12" fill="rgba(140,60,255,0.18)" stroke="rgba(140,60,255,0.55)" stroke-width="1"/><text x="780" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">♥</text></g>
-        <g><circle cx="870" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="872" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
-        <g><circle cx="960" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="960" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
-        <!-- After (teal) — Monthly highlights ✦ / Concert film ▶ / Fan reunion ♥ -->
-        <g><circle cx="1085" cy="236" r="13" fill="rgba(32,212,184,0.18)" stroke="rgba(32,212,184,0.55)" stroke-width="1"/><text x="1085" y="236" text-anchor="middle" dominant-baseline="central" fill="#20D4B8" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">✦</text></g>
-        <g><circle cx="1180" cy="236" r="12" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1"/><text x="1182" y="236" text-anchor="middle" dominant-baseline="central" fill="#20D4B8" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
-        <g><circle cx="1270" cy="236" r="12" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1"/><text x="1270" y="236" text-anchor="middle" dominant-baseline="central" fill="#20D4B8" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">♥</text></g>
+          </g>
+          </g>
+          </g>
+          </g>
+          </g>
+          </g>
+          </g>
 
-        <!-- Moment labels -->
-        <text x="125" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Fan">Fan</text>
-        <text x="125" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="quest" data-fr="quest">quest</text>
-        <text x="225" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Fan">Fan</text>
-        <text x="225" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="quiz" data-fr="quiz">quiz</text>
-        <text x="325" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Best" data-fr="Meilleures">Best</text>
-        <text x="325" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="playlists" data-fr="playlists">playlists</text>
-        <text x="600" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Exclusive" data-fr="Contenu">Exclusive</text>
-        <text x="600" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusif">drops</text>
-        <text x="510" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Pre-show" data-fr="Compte à">Pre-show</text>
-        <text x="510" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="countdown" data-fr="rebours">countdown</text>
-        <text x="690" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Paris" data-fr="Paris chasse">Paris</text>
-        <text x="690" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="treasure hunt" data-fr="au trésor">treasure hunt</text>
-        <text x="780" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Live" data-fr="Vote">Live</text>
-        <text x="780" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="vote" data-fr="en live">vote</text>
-        <text x="870" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Watch" data-fr="Watch">Watch</text>
-        <text x="870" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="party" data-fr="party">party</text>
-        <text x="960" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Backstage" data-fr="Coulisses">Backstage</text>
-        <text x="960" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusives">drops</text>
-        <text x="1085" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Monthly" data-fr="Drops">Monthly</text>
-        <text x="1085" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="mensuels">drops</text>
-        <text x="1180" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Best fan" data-fr="Meilleurs">Best fan</text>
-        <text x="1180" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="moments" data-fr="moments">moments</text>
-        <text x="1270" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Retrou-">Fan</text>
-        <text x="1270" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="reunion" data-fr="vailles">reunion</text>
+          </g>
+
+
+        <g><circle cx="70" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="62" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
+        <g><circle cx="165" cy="236" r="13" fill="rgba(255,200,50,0.16)" stroke="rgba(255,200,50,0.5)" stroke-width="1.1"/><svg x="157" y="228" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></g>
+        <g><circle cx="265" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="257" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
+        <g><circle cx="365" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="357" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
+        <g><circle cx="465" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="457" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
+        <g><circle cx="565" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="557" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
+        <g><circle cx="665" cy="236" r="13" fill="rgba(255,200,50,0.16)" stroke="rgba(255,200,50,0.5)" stroke-width="1.1"/><svg x="657" y="228" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></g>
+        <g><circle cx="755" cy="236" r="13" fill="rgba(255,200,50,0.16)" stroke="rgba(255,200,50,0.5)" stroke-width="1.1"/><svg x="747" y="228" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></g>
+        <g><circle cx="830" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="822" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
+        <g><circle cx="895" cy="236" r="13" fill="rgba(253,62,132,0.16)" stroke="rgba(253,62,132,0.5)" stroke-width="1.1"/><svg x="887" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></g>
+        <g><circle cx="965" cy="236" r="13" fill="rgba(253,62,132,0.16)" stroke="rgba(253,62,132,0.5)" stroke-width="1.1"/><svg x="957" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></g>
+        <g><circle cx="1075" cy="236" r="13" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1.1"/><svg x="1067" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></g>
+        <g><circle cx="1165" cy="236" r="13" fill="rgba(253,62,132,0.16)" stroke="rgba(253,62,132,0.5)" stroke-width="1.1"/><svg x="1157" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></g>
+        <g><circle cx="1265" cy="236" r="13" fill="rgba(0,130,255,0.16)" stroke="rgba(0,130,255,0.5)" stroke-width="1.1"/><svg x="1257" y="228" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></g>
         </g>
-
-
-        <!-- PHASE LABELS — Before narrower, During widest, After narrower -->
-        <g transform="translate(0,24)">
-        <!-- Before the concerts (amber) -->
-        <path d="M28,288 L395,288 L404,300 L395,312 L28,312 Q24,312,24,308 L24,292 Q24,288,28,288 Z" fill="rgba(31,206,255,0.12)" stroke="rgba(31,206,255,0.4)" stroke-width="0.8"/>
-        <text x="214" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12" data-en="Before the concerts" data-fr="Avant les concerts">Before the concerts</text>
-
-        <line x1="404" y1="300" x2="430" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-        <circle cx="417" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
-
-        <!-- During the 2 nights (magenta, widest) -->
-        <path d="M434,288 L1001,288 L1010,300 L1001,312 L434,312 Q430,312,430,308 L430,292 Q430,288,434,288 Z" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="0.8"/>
-        <text x="720" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12" data-en="During the 2 nights" data-fr="Pendant les 2 soirs">During the 2 nights</text>
-
-        <line x1="1010" y1="300" x2="1036" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-        <circle cx="1023" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
-
-        <!-- After (teal) -->
-        <path d="M1040,288 L1311,288 L1320,300 L1311,312 L1040,312 Q1036,312,1036,308 L1036,292 Q1036,288,1040,288 Z" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="0.8"/>
-        <text x="1178" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12" data-en="After" data-fr="Après">After</text>
+        <g transform="translate(0,4)">
+          <path d="M28,288 L705,288 L714,300 L705,312 L28,312 Q24,312,24,308 L24,292 Q24,288,28,288 Z" fill="rgba(31,206,255,0.12)" stroke="rgba(31,206,255,0.4)" stroke-width="0.8"/>
+          <text x="367" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Build-up · Jun - Nov" data-fr="Mise en route · juin - nov">Build-up · Jun - Nov</tspan></text>
+          <line x1="714" y1="300" x2="740" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <circle cx="727" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+          <path d="M744,288 L1001,288 L1010,300 L1001,312 L744,312 Q740,312,740,308 L740,292 Q740,288,744,288 Z" fill="rgba(204,43,251,0.14)" stroke="rgba(204,43,251,0.45)" stroke-width="0.8"/>
+          <text x="872" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Concerts · Dec" data-fr="Les concerts · déc">Concerts · Dec</tspan></text>
+          <line x1="1010" y1="300" x2="1036" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <circle cx="1023" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+          <path d="M1040,288 L1311,288 L1320,300 L1311,312 L1040,312 Q1036,312,1036,308 L1036,292 Q1036,288,1040,288 Z" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="0.8"/>
+          <text x="1176" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="After the shows · Jan - onwards" data-fr="Après les concerts · janvier - et après">After the shows · Jan - onwards</tspan></text>
+          <line x1="1140" y1="343" x2="1172" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
+          <text x="1182" y="347" text-anchor="start" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Magic engagement" data-fr="Engagement Magic">Magic engagement</tspan></text>
+          <line x1="1140" y1="358" x2="1172" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
+          <text x="1182" y="362" text-anchor="start" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic"><tspan data-en="Traditional engagement" data-fr="Engagement traditionnel">Traditional engagement</tspan></text>
         </g>
-
       </svg>
-      <!-- Chart legend (left, stacked, under graph) -->
-      <div style="display:flex;flex-direction:column;gap:8px;margin-top:-60px;align-items:flex-start;font-family:'Gilroy',sans-serif;">
-        <div style="display:flex;align-items:center;gap:10px;">
-          <span style="width:24px;height:2.5px;background:#1FCEFF;border-radius:2px;display:inline-block;"></span>
-          <span style="font-size:14px;font-weight:800;color:#1FCEFF;">Millions</span>
-          <span style="font-size:13px;font-style:italic;color:rgba(255,255,255,0.85);" data-en="Reached via Magic" data-fr="Touchés par Magic">Reached via Magic</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:10px;">
-          <span style="width:24px;height:1.5px;background:rgba(255,255,255,0.32);border-radius:2px;display:inline-block;"></span>
-          <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.92);">~80K</span>
-          <span style="font-size:13px;font-style:italic;color:rgba(255,255,255,0.55);" data-en="Ticket holders only" data-fr="Billetés uniquement">Ticket holders only</span>
-        </div>
-      </div>
-   </div>
+    </div>
   </div>
 </div>
 </div>
-
 <!-- ═══════════════════════════════════════
   S4 — ENTER YOUR FANVERSE
 ═══════════════════════════════════════ -->
@@ -1927,8 +1890,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="ss-star" style="width:3px;height:3px;top:50%;left:calc(50% - 265px);transform:translate(-50%,-50%);opacity:.65;"></div>
 
         <div class="ss-sun">
-          <span style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;color:rgba(40,40,40,0.8);letter-spacing:0.08em;" data-en="CÉLINE" data-fr="CÉLINE">CÉLINE</span>
-          <span style="font-family:'Gilroy',sans-serif;font-weight:400;font-size:10px;color:rgba(40,40,40,0.5);letter-spacing:0.12em;" data-en="DION" data-fr="DION">DION</span>
+          <span style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:15px;color:rgba(40,40,40,0.8);letter-spacing:0.08em;" data-en="GIMS" data-fr="GIMS">GIMS</span>
         </div>
 
         <div class="r1" style="--spd:20s;--s:0deg;">
