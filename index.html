@@ -44,12 +44,12 @@
   --cardb: rgba(255,255,255,0.09);
   --cyan:  #1FCEFF;
   --blue:  #0082FF;
-  --purp:  #8C3CFF;
+  --purp:  #CC2BFB;
   --purp2: #6166B2;
   --white: #FFFFFF;
   --muted: rgba(255,255,255,0.5);
   --gp:    linear-gradient(135deg, #0082FF 0%, #1FCEFF 100%);
-  --gpu:   linear-gradient(135deg, #8C3CFF 0%, #1FCEFF 100%);
+  --gpu:   linear-gradient(135deg, #CC2BFB 0%, #1FCEFF 100%);
   --gwarm: linear-gradient(135deg, #FD3E84 0%, #FFA28D 100%);
 }
 
@@ -101,9 +101,9 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
 
 /* Cover title light ray — text-only shimmer */
 @keyframes heartPulse {
-  0%   { transform:scale(1); filter:drop-shadow(0 0 24px rgba(140,60,255,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
-  50%  { transform:scale(1.08); filter:drop-shadow(0 0 40px rgba(140,60,255,0.4)) drop-shadow(0 0 90px rgba(31,206,255,0.25)); }
-  100% { transform:scale(1); filter:drop-shadow(0 0 24px rgba(140,60,255,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
+  0%   { transform:scale(1); filter:drop-shadow(0 0 24px rgba(204,43,251,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
+  50%  { transform:scale(1.08); filter:drop-shadow(0 0 40px rgba(204,43,251,0.4)) drop-shadow(0 0 90px rgba(31,206,255,0.25)); }
+  100% { transform:scale(1); filter:drop-shadow(0 0 24px rgba(204,43,251,0.25)) drop-shadow(0 0 60px rgba(31,206,255,0.15)); }
 }
 @keyframes heartGlow {
   0%   { opacity:0.4; transform:scale(1); }
@@ -133,8 +133,8 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   50%      { transform:translateX(6px); opacity:1; }
 }
 @keyframes takeawayPulse {
-  0%, 100% { box-shadow:0 4px 50px rgba(31,206,255,0.3),0 0 40px rgba(140,60,255,0.2),0 0 80px rgba(31,206,255,0.1); border-color:rgba(31,206,255,0.4); }
-  50%      { box-shadow:0 4px 100px rgba(31,206,255,0.5),0 0 70px rgba(140,60,255,0.35),0 0 120px rgba(31,206,255,0.15); border-color:rgba(31,206,255,0.6); }
+  0%, 100% { box-shadow:0 4px 50px rgba(31,206,255,0.3),0 0 40px rgba(204,43,251,0.2),0 0 80px rgba(31,206,255,0.1); border-color:rgba(31,206,255,0.4); }
+  50%      { box-shadow:0 4px 100px rgba(31,206,255,0.5),0 0 70px rgba(204,43,251,0.35),0 0 120px rgba(31,206,255,0.15); border-color:rgba(31,206,255,0.6); }
 }
 @keyframes textShimmer {
   0%   { background-position:200% center, 0% center; }
@@ -196,7 +196,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
 .gl-tl { width:700px; height:700px; top:-250px; left:-250px;
   background:radial-gradient(circle, rgba(0,130,255,0.28) 0%, transparent 65%); }
 .gl-br { width:600px; height:600px; bottom:-200px; right:-200px;
-  background:radial-gradient(circle, rgba(140,60,255,0.22) 0%, transparent 65%); }
+  background:radial-gradient(circle, rgba(204,43,251,0.22) 0%, transparent 65%); }
 .gl-tr { width:500px; height:500px; top:-150px; right:-150px;
   background:radial-gradient(circle, rgba(31,206,255,0.18) 0%, transparent 65%); }
 .gl-bl { width:450px; height:450px; bottom:-150px; left:-100px;
@@ -237,7 +237,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   border:1px solid rgba(31,206,255,0.3); color:var(--cyan);
   background:rgba(31,206,255,0.07);
 }
-.tag-pu { border-color:rgba(140,60,255,0.3); color:var(--purp); background:rgba(140,60,255,0.07); }
+.tag-pu { border-color:rgba(204,43,251,0.3); color:var(--purp); background:rgba(204,43,251,0.07); }
 
 .gt { background:var(--gpu); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 .gpu-t { background:var(--gpu); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
@@ -457,7 +457,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   inset:120px 24px 100px;
   border-radius:50%;
   background:
-    radial-gradient(circle, rgba(88,58,255,0.38) 0%, rgba(31,206,255,0.18) 34%, rgba(140,60,255,0.14) 52%, transparent 76%);
+    radial-gradient(circle, rgba(88,58,255,0.38) 0%, rgba(31,206,255,0.18) 34%, rgba(204,43,251,0.14) 52%, transparent 76%);
   filter:blur(16px);
   pointer-events:none;
 }
@@ -628,7 +628,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   height:18px;
   border-radius:10px 10px 10px 3px;
   transform:rotate(45deg);
-  background:linear-gradient(135deg, #8C3CFF 0%, #1FCEFF 100%);
+  background:linear-gradient(135deg, #CC2BFB 0%, #1FCEFF 100%);
   box-shadow:0 0 14px rgba(103,108,255,0.35);
 }
 
@@ -760,7 +760,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   width:18px;
   height:18px;
   border-radius:50%;
-  background:linear-gradient(135deg, #8C3CFF 0%, #1FCEFF 100%);
+  background:linear-gradient(135deg, #CC2BFB 0%, #1FCEFF 100%);
   box-shadow:0 0 0 3px rgba(72,56,198,0.9);
 }
 
@@ -1303,7 +1303,7 @@ body.scroll-mode #present-arrows { display:none !important; }
 body.scroll-mode #mobile-fs-exit { display:none !important; }
 body.scroll-mode #fs-toast { display:none !important; }
 body.scroll-mode #progress { display:none !important; }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .body-shrink-mobile { font-size:14px !important; line-height:1.55 !important; }
 }
 
@@ -1531,7 +1531,6 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1;width:900px;height:900px;top:-350px;left:-350px;background:radial-gradient(circle, rgba(0,130,255,0.22) 0%, transparent 65%);"></div>
-  <div class="gl gl-br" style="z-index:1;width:800px;height:800px;bottom:-300px;right:-300px;background:radial-gradient(circle, rgba(140,60,255,0.18) 0%, transparent 65%);"></div>
   <div class="gl gl-tr" style="z-index:1"></div>
   <div class="grid"></div>
 
@@ -1550,8 +1549,8 @@ body.present-mode #present-arrows { display:flex !important; }
       Magic for<br><span class="gt cover-title">Gims</span>
     </div>
     <div style="width:64px;height:3px;background:var(--gp);border-radius:2px;margin-top:36px;"></div>
-    <p style="margin-top:28px;font-size:20px;line-height:1.6;font-weight:300;color:var(--muted);max-width:480px;" data-en="An ecosystem built for Gims&#39;s fan community, and everything that comes next." data-fr="Un écosystème dédié à la communauté des fans et son prolongement.">
-      An ecosystem built for Gims&#39;s fan community, and everything that comes next.
+    <p style="margin-top:28px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:560px;" data-en="Turn your audience into an engaged fandom that drives direct revenue." data-fr="Transformez votre audience en un fandom engagé qui génère des revenus directs.">
+      Turn your audience into an engaged fandom that drives direct revenue.
     </p>
     <p style="margin-top:48px;font-size:14px;line-height:1.5;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:var(--gpu);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-en="Built for Carpe Diem tour · La Défense Arena · 16-17 December 2026" data-fr="Pensé pour la tournée Carpe Diem · La Défense Arena · 16-17 décembre 2026">
       Built for Carpe Diem tour · La Défense Arena · 16-17 December 2026
@@ -1566,32 +1565,34 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="slide" id="s1">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
-  <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-num">02 / 10</div>
+  <div class="gl gl-tl" style="z-index:1"></div><div class="grid"></div>
+  <div class="s-bar s-bar-pu"></div><div class="s-num">02 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;align-items:center;padding:80px 120px 80px 112px;gap:80px;z-index:2;">
     <div style="flex:0 0 48%;display:flex;flex-direction:column;gap:28px;z-index:2;">
-      <span class="tag" data-en="✦ The comeback" data-fr="✦ Le retour">✦ The comeback</span>
+      <span class="tag" data-en="✦ Gims" data-fr="✦ Gims">✦ Gims</span>
       <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:82px;line-height:0.92;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Welcome<br><span class='gt'>to Magic.</span>" data-fr-html="Bienvenue<br><span class='gt'>sur Magic.</span>">
         Welcome<br><span class="gt">to Magic.</span>
       </div>
       <div style="width:52px;height:3px;background:var(--gp);border-radius:2px;"></div>
-      <p style="font-size:20px;line-height:1.7;font-weight:300;color:var(--muted);max-width:600px;" data-en="After years away from the stage, Gims's return to Paris has stirred millions of fans eager to see him live again. Magical moments for the fans already counting the days." data-fr="Après des années loin de la scène, le retour de Gims à Paris a passionné des millions de fans qui veulent le retrouver en live. Des moments magiques pour ses fans qui s'impatientent déjà.">
-        After years away from the stage, Gims's return to Paris has stirred millions of fans eager to see him live again. Magical moments for the fans already counting the days.
+      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:600px;" data-en="As artists and producers, you're spread across every platform. You create, you post, but you have no unified view of your audience and no direct way to activate your fans." data-fr="En tant qu'artistes et producteurs, vous êtes éparpillés sur chaque plateforme. Vous créez, vous postez, mais vous n'avez aucune vue unifiée de votre audience ni aucun moyen direct d'activer vos fans.">
+        As artists and producers, you're spread across every platform. You create, you post, but you have no unified view of your audience and no direct way to activate your fans.
       </p>
-      <p style="font-size:18px;line-height:1.6;font-weight:400;color:rgba(255,255,255,0.7);max-width:600px;" data-en="La Défense in December is the trigger. Magic is what turns two nights into a fandom that keeps going." data-fr="La Défense en décembre, c'est le déclencheur. Magic, c'est ce qui transforme deux soirs en un fandom qui dure.">
-        La Défense in December is the trigger. Magic is what turns two nights into a fandom that keeps going.
+      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:600px;" data-en="Magic changes that. A dedicated app for fan engagement where every action your fans take has real impact on your streams, ticketing, merchandising and more." data-fr="Magic change cela. Une app dédiée à l'engagement fan où chaque action de vos fans a un impact réel sur vos streams, votre billetterie, votre merchandising et plus encore.">
+        Magic changes that. A dedicated app for fan engagement where every action your fans take has real impact on your streams, ticketing, merchandising and more.
       </p>
-      <p style="font-size:22px;font-weight:700;color:rgba(255,255,255,0.8);letter-spacing:0.03em;" data-en="This is his Fanverse." data-fr="Voici le Fanverse de Gims.">This is his Fanverse.</p>
+      <p style="font-size:20px;line-height:1.65;font-weight:300;color:rgba(255,255,255,0.7);max-width:600px;" data-en="La Défense Arena on 16-17 December is the trigger. Magic is what turns those two nights into a fandom that keeps going." data-fr="La Défense Arena les 16 et 17 décembre, c'est le déclencheur. Magic, c'est ce qui transforme ces deux soirs en un fandom qui dure.">
+        La Défense Arena on 16-17 December is the trigger. Magic is what turns those two nights into a fandom that keeps going.
+      </p>
+      <p style="font-size:22px;font-weight:700;color:rgba(255,255,255,0.8);letter-spacing:0.03em;" data-en="This is your Fanverse." data-fr="Voici votre Fanverse.">This is your Fanverse.</p>
     </div>
 
-    <!-- Hero media — TODO: swap placeholder for a real Gims hero image. Currently using a leftover Celine-era still as placeholder. Same mask/styling as Toto s1. -->
+    <!-- Hero media — full bleed right, fade only on left -->
     <div id="s1-hero-media" style="position:absolute;top:0;right:0;bottom:0;width:55%;overflow:hidden;">
-      <img id="s1-hero-img" src="Assets/Deck Edits/67960554_10156312576851651_857208479381716992_n.jpg" alt="Gims (placeholder — replace with real Gims hero image)" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);">
-      <div aria-hidden="true" style="position:absolute;inset:0;background:rgba(31,120,255,0.45);mix-blend-mode:color;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);"></div>
-      <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.5) 30%,rgba(13,27,66,0.2) 45%,transparent 60%,transparent 75%,rgba(13,27,66,0.95) 100%);pointer-events:none;"></div>
-      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse 55% 100% at 100% 50%, rgba(13,27,66,0.75) 0%, rgba(13,27,66,0.25) 45%, transparent 75%);pointer-events:none;"></div>
+      <img id="s1-hero-img" src="Assets/welcome-gims.jpeg" alt="Gims" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;transform:scaleX(-1);-webkit-mask-image:linear-gradient(to left,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);mask-image:linear-gradient(to left,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);">
+      <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.55) 30%,rgba(13,27,66,0.2) 45%,transparent 60%);"></div>
     </div>
+
   </div>
 </div>
 </div>
@@ -1602,7 +1603,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">03 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">03 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:60px 80px 60px 80px;z-index:2;">
 
@@ -1611,7 +1612,7 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;" spellcheck="false" data-i18n="html" data-en-html="You have the audience.<br><span class='gt'>You just don't own it.</span>" data-fr-html="Vous avez l'audience.<br><span class='gt'>Mais vous ne la possédez pas.</span>">
         You have the audience.<br><span class="gt">You just don't own it.</span>
       </div>
-      <p class="body-shrink-mobile" style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:980px;" data-i18n="html" data-en-html="Reach is everywhere. Ownership is not. Your fans are scattered across platforms you don't control,<br>interacting through algorithms you don't own." data-fr-html="La portée est partout. La propriété, non. Vos fans sont éparpillés sur des plateformes que vous ne contrôlez pas,<br>interagissant via des algorithmes qui ne vous appartiennent pas.">Reach is everywhere. Ownership is not. Your fans are scattered across platforms you don't control,<br>interacting through algorithms you don't own.</p>
+      <p class="body-shrink-mobile" style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:980px;" data-i18n="html" data-en-html="Reach is everywhere. Ownership is not. Your fans are scattered across platforms you don't control,<br>interacting through algorithms you don't own." data-fr-html="La portée est partout. La propriété, non. Vos fans sont éparpillés sur des plateformes que vous ne contrôlez pas, interagissant via des algorithmes qui ne vous appartiennent pas.">Reach is everywhere. Ownership is not. Your fans are scattered across platforms you don't control,<br>interacting through algorithms you don't own.</p>
     </div>
 
     <div style="display:flex;align-items:stretch;gap:60px;padding-top:36px;">
@@ -1639,7 +1640,7 @@ body.present-mode #present-arrows { display:flex !important; }
 
         <!-- Row 3 -->
         <div style="display:flex;align-items:center;padding:18px 40px 18px 40px;">
-          <div style="flex:0 0 230px;white-space:nowrap;font-size:16px;font-weight:300;color:rgba(255,255,255,0.45);line-height:1.3;" data-en="A fan buys a ticket" data-fr="Un fan achète un billet">A fan buys a ticket</div>
+          <div style="flex:0 0 230px;white-space:nowrap;font-size:16px;font-weight:300;color:rgba(255,255,255,0.45);line-height:1.3;" data-en="A fan buys a ticket" data-fr="Un fan achète un billet">Your most devoted fans</div>
           <svg width="80" height="16" viewBox="0 0 80 16" fill="none" style="flex-shrink:0;margin:0 14px;">
             <path d="M0 8h60M54 2l12 6-12 6" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1660,8 +1661,8 @@ body.present-mode #present-arrows { display:flex !important; }
       <!-- Magic changes that -->
       <div style="flex:0 0 420px;display:flex;align-items:stretch;justify-content:center;">
         <div class="magic-box" style="position:relative;border-radius:20px;padding:2px;animation:takeawayPulse 3s ease-in-out infinite;display:flex;flex-direction:column;flex:1;">
-          <div style="position:absolute;inset:0;border-radius:20px;border:4px solid transparent;background:linear-gradient(var(--border-angle,0deg),rgba(31,206,255,0.8),rgba(140,60,255,0.7),rgba(140,60,255,0.8),rgba(31,206,255,0.8)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderShift 8s linear infinite;z-index:2;pointer-events:none;"></div>
-          <div style="padding:40px 40px;background:linear-gradient(140deg,rgba(31,206,255,0.08) 0%,rgba(140,60,255,0.14) 100%);display:flex;align-items:center;justify-content:center;flex:1;;border-radius:18px;text-align:center;position:relative;z-index:3;">
+          <div style="position:absolute;inset:0;border-radius:20px;border:4px solid transparent;background:linear-gradient(var(--border-angle,0deg),rgba(31,206,255,0.8),rgba(204,43,251,0.7),rgba(204,43,251,0.8),rgba(31,206,255,0.8)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderShift 8s linear infinite;z-index:2;pointer-events:none;"></div>
+          <div style="padding:40px 40px;background:linear-gradient(140deg,rgba(31,206,255,0.08) 0%,rgba(204,43,251,0.14) 100%);display:flex;align-items:center;justify-content:center;flex:1;;border-radius:18px;text-align:center;position:relative;z-index:3;">
             <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:36px;line-height:1.3;" data-i18n="html" data-en-html="Magic<br><span class='gt gt-shimmer'>changes that.</span>" data-fr-html="Magic<br><span class='gt gt-shimmer'>change la donne.</span>">
               Magic<br><span class="gt gt-shimmer">changes that.</span>
             </div>
@@ -1673,26 +1674,27 @@ body.present-mode #present-arrows { display:flex !important; }
   </div>
 </div>
 </div>
+
 <!-- ═══════════════════════════════════════
-  S7 — MAKE EVERY MOMENT BIGGER
+  S-MILESTONES — WHERE THE PEAKS LAND (chart)
 ═══════════════════════════════════════ -->
 <style>
-  #s7 .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;z-index:2;}
-  #s7 .chartwrap{flex:1;display:flex;align-items:center;justify-content:center;margin-top:12px;}
-  #s7 .chartwrap svg{width:100%;height:auto;max-height:560px;}
-  #s7 .clegend{display:flex;gap:18px;align-items:center;justify-content:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.6);margin-top:6px;}
-  #s7 .h{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
-  #s7 .sub{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:920px;line-height:1.65;}
+  #s-momentum .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;z-index:2;}
+  #s-momentum .chartwrap{flex:1;display:flex;align-items:center;justify-content:center;margin-top:12px;}
+  #s-momentum .chartwrap svg{width:100%;height:auto;max-height:560px;}
+  #s-momentum .clegend{display:flex;gap:18px;align-items:center;justify-content:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.6);margin-top:6px;}
+  #s-momentum .h{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
+  #s-momentum .sub{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:920px;line-height:1.65;}
 </style>
-<div class="slide" id="s7">
+<div class="slide" id="s-momentum">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">04 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">04 / 12</div>
 
   <div class="pad">
     <div style="flex-shrink:0;">
-      <span class="tag tag-pu" data-en="Momentum" data-fr="Momentum">Momentum</span>
+      <span class="tag" data-en="Momentum" data-fr="Momentum">Momentum</span>
       <div class="h" data-i18n="html" data-en-html="Make every moment <span class='gt'>bigger.</span>" data-fr-html="Faire de chaque moment <span class='gt'>un événement.</span>">Make every moment <span class="gt">bigger.</span></div>
       <p class="sub" data-en="Magic turns the Carpe Diem tour and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year." data-fr="Magic transforme la tournée Carpe Diem et tout ce qui l'entoure en expériences fans qui génèrent plus de portée, plus de ventes, plus d'engagement. Moins de creux, du momentum toute l'année.">Magic turns the Carpe Diem tour and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year.</p>
     </div>
@@ -1709,20 +1711,20 @@ body.present-mode #present-arrows { display:flex !important; }
         <path d="M 20 173.6 C 26.7 173.3, 50.7 172.6, 70 171.5 C 89.3 170.4, 139.0 167.5, 165 165.2 C 191.0 162.9, 238.3 157.8, 265 154.1 C 291.7 150.4, 338.3 142.5, 365 137.2 C 391.7 131.9, 438.3 121.2, 465 114.7 C 491.7 108.2, 538.3 95.2, 565 88.2 C 591.7 81.2, 639.7 68.0, 665 61.9 C 690.3 55.8, 733.0 46.6, 755 42.7 C 777.0 38.8, 811.3 34.5, 830 32.8 C 848.7 31.1, 877.0 29.9, 895 30.0 C 913.0 30.1, 941.0 30.6, 965 33.3 C 989.0 36.0, 1048.3 45.3, 1075 50.5 C 1101.7 55.7, 1139.7 65.6, 1165 72.1 C 1190.3 78.6, 1244.3 93.6, 1265 99.1 C 1285.7 104.6, 1312.7 111.5, 1320 113.4 L 1320 210 L 20 210 Z" fill="url(#tlf)" opacity="0.45"/>
         <path d="M 20 173.6 C 26.7 173.3, 50.7 172.6, 70 171.5 C 89.3 170.4, 139.0 167.5, 165 165.2 C 191.0 162.9, 238.3 157.8, 265 154.1 C 291.7 150.4, 338.3 142.5, 365 137.2 C 391.7 131.9, 438.3 121.2, 465 114.7 C 491.7 108.2, 538.3 95.2, 565 88.2 C 591.7 81.2, 639.7 68.0, 665 61.9 C 690.3 55.8, 733.0 46.6, 755 42.7 C 777.0 38.8, 811.3 34.5, 830 32.8 C 848.7 31.1, 877.0 29.9, 895 30.0 C 913.0 30.1, 941.0 30.6, 965 33.3 C 989.0 36.0, 1048.3 45.3, 1075 50.5 C 1101.7 55.7, 1139.7 65.6, 1165 72.1 C 1190.3 78.6, 1244.3 93.6, 1265 99.1 C 1285.7 104.6, 1312.7 111.5, 1320 113.4" stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
         <g stroke-dasharray="2 3" stroke-width="1" fill="none">
-          <line x1="70" y1="172" x2="70" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="165" y1="165" x2="165" y2="234" stroke="rgba(255,200,50,0.35)"/>
-          <line x1="265" y1="154" x2="265" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="365" y1="137" x2="365" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="465" y1="115" x2="465" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="565" y1="88" x2="565" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="665" y1="62" x2="665" y2="234" stroke="rgba(255,200,50,0.35)"/>
-          <line x1="755" y1="43" x2="755" y2="234" stroke="rgba(255,200,50,0.35)"/>
-          <line x1="830" y1="33" x2="830" y2="234" stroke="rgba(31,206,255,0.3)"/>
-          <line x1="895" y1="30" x2="895" y2="234" stroke="rgba(253,62,132,0.3)"/>
-          <line x1="965" y1="33" x2="965" y2="234" stroke="rgba(253,62,132,0.3)"/>
-          <line x1="1075" y1="51" x2="1075" y2="234" stroke="rgba(32,212,184,0.3)"/>
-          <line x1="1165" y1="72" x2="1165" y2="234" stroke="rgba(253,62,132,0.3)"/>
-          <line x1="1265" y1="99" x2="1265" y2="234" stroke="rgba(0,130,255,0.3)"/>
+          <line x1="70" y1="172" x2="70" y2="222" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="165" y1="165" x2="165" y2="222" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="265" y1="154" x2="265" y2="222" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="365" y1="137" x2="365" y2="222" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="465" y1="115" x2="465" y2="222" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="565" y1="88" x2="565" y2="222" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="665" y1="62" x2="665" y2="222" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="755" y1="43" x2="755" y2="222" stroke="rgba(255,200,50,0.35)"/>
+          <line x1="830" y1="33" x2="830" y2="222" stroke="rgba(31,206,255,0.3)"/>
+          <line x1="895" y1="30" x2="895" y2="222" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="965" y1="33" x2="965" y2="222" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="1075" y1="51" x2="1075" y2="222" stroke="rgba(32,212,184,0.3)"/>
+          <line x1="1165" y1="72" x2="1165" y2="222" stroke="rgba(253,62,132,0.3)"/>
+          <line x1="1265" y1="99" x2="1265" y2="222" stroke="rgba(0,130,255,0.3)"/>
         </g>
         <circle cx="70" cy="172" r="4.5" fill="#1FCEFF"/>
         <circle cx="165" cy="165" r="4.5" fill="#FFC832"/>
@@ -1739,20 +1741,20 @@ body.present-mode #present-arrows { display:flex !important; }
         <circle cx="1165" cy="72" r="4.5" fill="#FD3E84"/>
         <circle cx="1265" cy="99" r="4.5" fill="#0082FF"/>
         <text x="70" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Quest</text>
-        <text x="165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Invite Friends</text>
+        <text x="165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Invite Friends" data-fr="Inviter des amis">Invite Friends</tspan></text>
         <text x="265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Lens</text>
-        <text x="365" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan Faves</text>
-        <text x="465" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Talent Faves</text>
-        <text x="565" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Events</text>
-        <text x="665" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Tickets</text>
+        <text x="365" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Fan Faves" data-fr="Faves fans">Fan Faves</tspan></text>
+        <text x="465" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Talent Faves" data-fr="Faves artiste">Talent Faves</tspan></text>
+        <text x="565" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Events" data-fr="Événements">Events</tspan></text>
+        <text x="665" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Tickets" data-fr="Billets">Tickets</tspan></text>
         <text x="755" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Mystery Box</text>
-        <text x="830" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Fan Meet</text>
-        <text x="895" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Store</text>
-        <text x="965" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Collectibles</text>
+        <text x="830" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Fan Meet" data-fr="Rencontre fans">Fan Meet</tspan></text>
+        <text x="895" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Store" data-fr="Boutique">Store</tspan></text>
+        <text x="965" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Collectibles" data-fr="Collectibles">Collectibles</tspan></text>
         <text x="1075" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Magic Unlimited</text>
-        <text x="1165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Merch</text>
-        <text x="1265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Music</text>
-
+        <text x="1165" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Merch" data-fr="Merch">Merch</tspan></text>
+        <text x="1265" y="268" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10"><tspan data-en="Music" data-fr="Musique">Music</tspan></text>
+        
         <g transform="translate(0,10)">
           </g>
           </g>
@@ -1761,10 +1763,10 @@ body.present-mode #present-arrows { display:flex !important; }
           </g>
           </g>
           </g>
-
+          
           </g>
-
-
+          
+        
         <g><circle cx="70" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="62" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
         <g><circle cx="165" cy="236" r="13" fill="rgba(255,200,50,0.16)" stroke="rgba(255,200,50,0.5)" stroke-width="1.1"/><svg x="157" y="228" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></g>
         <g><circle cx="265" cy="236" r="13" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1.1"/><svg x="257" y="228" width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></g>
@@ -1782,15 +1784,15 @@ body.present-mode #present-arrows { display:flex !important; }
         </g>
         <g transform="translate(0,4)">
           <path d="M28,288 L705,288 L714,300 L705,312 L28,312 Q24,312,24,308 L24,292 Q24,288,28,288 Z" fill="rgba(31,206,255,0.12)" stroke="rgba(31,206,255,0.4)" stroke-width="0.8"/>
-          <text x="367" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Build-up · Jun - Nov" data-fr="Mise en route · juin - nov">Build-up · Jun - Nov</tspan></text>
+          <text x="369" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Build-up · Jun - Nov" data-fr="Mise en route · juin - nov">Build-up · Jun - Nov</tspan></text>
           <line x1="714" y1="300" x2="740" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
           <circle cx="727" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
           <path d="M744,288 L1001,288 L1010,300 L1001,312 L744,312 Q740,312,740,308 L740,292 Q740,288,744,288 Z" fill="rgba(204,43,251,0.14)" stroke="rgba(204,43,251,0.45)" stroke-width="0.8"/>
-          <text x="872" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Concerts · Dec" data-fr="Les concerts · déc">Concerts · Dec</tspan></text>
+          <text x="875" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Concerts · Dec" data-fr="Les concerts · déc">Concerts · Dec</tspan></text>
           <line x1="1010" y1="300" x2="1036" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
           <circle cx="1023" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
           <path d="M1040,288 L1311,288 L1320,300 L1311,312 L1040,312 Q1036,312,1036,308 L1036,292 Q1036,288,1040,288 Z" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="0.8"/>
-          <text x="1176" y="303" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="After the shows · Jan - onwards" data-fr="Après les concerts · janvier - et après">After the shows · Jan - onwards</tspan></text>
+          <text x="1178" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="After the shows · Jan - onwards" data-fr="Après les concerts · janvier - et après">After the shows · Jan - onwards</tspan></text>
           <line x1="1140" y1="343" x2="1172" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
           <text x="1182" y="347" text-anchor="start" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Magic engagement" data-fr="Engagement Magic">Magic engagement</tspan></text>
           <line x1="1140" y1="358" x2="1172" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
@@ -1808,17 +1810,17 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-tr" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">05 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">05 / 12</div>
 
   <div id="solar">
     <div id="solar-text">
       <span class="tag" data-en="The Fanverse" data-fr="Le Fanverse">The Fanverse</span>
-      <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Enter Gims's<br><span class='gt'>Fanverse</span>" data-fr-html="Entrez dans le<br><span class='gt'>Fanverse de Gims</span>">
-        Enter Gims's<br><span class="gt">Fanverse</span>
+      <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Enter&nbsp;your<br><span class='gt'>Fanverse</span>" data-fr-html="Voici votre<br><span class='gt'>Fanverse</span>">
+        Enter&nbsp;your<br><span class="gt">Fanverse</span>
       </div>
       <div style="width:52px;height:3px;background:var(--gp);border-radius:2px;margin-top:20px;"></div>
-      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);" data-en="Gims at the centre. A universe of features built around him: chat, collectibles, quests, rewards, drops. This is his space, all year long." data-fr="Gims au centre. Un univers de fonctionnalités construit autour de lui : chat, collectibles, quêtes, récompenses, drops. C'est son espace, toute l'année.">
-        Gims at the centre. A universe of features built around him: chat, collectibles, quests, rewards, drops. This is his space, all year long.
+      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);" data-i18n="html" data-en-html="You're the star at the centre. Magic builds a universe of features around you, from chat and collectibles to quests and rewards, keeping your fans engaged and connected to you all year&nbsp;long." data-fr-html="Vous êtes l'étoile au centre. Magic crée un univers de fonctionnalités autour de vous, du chat aux collectibles, des quêtes aux récompenses, gardant vos fans engagés et connectés à vous toute&nbsp;l'année.">
+        You're the star at the centre. Magic builds a universe of features around you, from chat and collectibles to quests and rewards, keeping your fans engaged and connected to you all year&nbsp;long.
       </p>
     </div>
 
@@ -1902,7 +1904,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-105px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:36px;height:36px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-card"></use></svg></div>
+                <div class="ss-planet" style="width:36px;height:36px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-card"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Fan card" data-fr="Carte fan">Fan card</div>
             </div>
@@ -1943,7 +1945,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-185px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:42px;height:42px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-calendar"></use></svg></div>
+                <div class="ss-planet" style="width:42px;height:42px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-calendar"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Events" data-fr="Événements">Events</div>
             </div>
@@ -1985,7 +1987,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-265px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:48px;height:48px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon ss-icon-xl" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bolt"></use></svg></div>
+                <div class="ss-planet" style="width:48px;height:48px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon ss-icon-xl" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bolt"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Magic Quest" data-fr="Magic Quest">Magic Quest</div>
             </div>
@@ -2016,7 +2018,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="ss-arm">
             <div class="ss-planet-wrap" style="top:-265px;">
               <div class="ss-pgroup">
-                <div class="ss-planet" style="width:44px;height:44px;background:#8C3CFF;box-shadow:0 0 12px 6px rgba(140,60,255,0.45),0 0 28px 12px rgba(140,60,255,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bookmark"></use></svg></div>
+                <div class="ss-planet" style="width:44px;height:44px;background:#CC2BFB;box-shadow:0 0 12px 6px rgba(204,43,251,0.45),0 0 28px 12px rgba(204,43,251,0.18);"><svg class="ss-icon ss-icon-lg" viewBox="0 0 24 24" aria-hidden="true"><use href="#ss-i-bookmark"></use></svg></div>
               </div>
               <div class="ss-plabel" data-en="Faves" data-fr="Favoris">Faves</div>
             </div>
@@ -2037,13 +2039,18 @@ body.present-mode #present-arrows { display:flex !important; }
   </div>
 </div>
 </div>
+
+<!-- ═══════════════════════════════════════
+  S-FUNNEL — ACQUISITION FUNNEL (GIMS)
+═══════════════════════════════════════ -->
+
 <!-- ═══════════════════════════════════════
   S5 — A REASON TO RETURN EVERY DAY
 ═══════════════════════════════════════ -->
 <div class="slide" id="s5">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">06 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">06 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 56px;">
     <div style="flex-shrink:0;margin-bottom:28px;">
@@ -2065,7 +2072,7 @@ body.present-mode #present-arrows { display:flex !important; }
         </div>
       </div>
       <!-- Panel 2: Replace #s5-img-gamification contents with <img> -->
-      <div style="flex:1;background:rgba(90,30,140,0.2);border:1px solid rgba(140,60,255,0.2);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
+      <div style="flex:1;background:rgba(90,30,140,0.2);border:1px solid rgba(204,43,251,0.2);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
         <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;background:var(--gpu);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:0.08em;text-transform:uppercase;" data-en="Gamification" data-fr="Gamification">Gamification</div>
         <div id="s5-img-gamification" style="flex:1;border-radius:12px;overflow:hidden;">
           <img src="Assets/Deck Edits/Game Page Gims.png" alt="Gamification" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
@@ -2089,103 +2096,102 @@ body.present-mode #present-arrows { display:flex !important; }
   </div>
 </div>
 </div>
-
-<!-- ═══════════════════════════════════════
-  S-EXPERIENCES — THREE KEY EXPERIENCES FOR ARTISTS
-═══════════════════════════════════════ -->
-<div class="slide" id="s-applied">
 <style>
-  #s-applied .pad2{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;z-index:2;}
-  #s-applied .h2{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
-  #s-applied .sub2{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:1040px;line-height:1.65;}
-  #s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin-top:14px;}
-  #s-applied .pband{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;}
-  #s-applied .pseg{font-family:'Gilroy',sans-serif;border-radius:9px;padding:8px 10px;font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;}
-  #s-applied .pseg.c{grid-column:span 4;background:rgba(31,206,255,0.1);color:#1FCEFF;border:1px solid rgba(31,206,255,0.25);}
-  #s-applied .pseg.p{grid-column:span 1;background:rgba(204,43,251,0.12);color:#CC2BFB;border:1px solid rgba(204,43,251,0.3);}
-  #s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.1);color:#20D4B8;border:1px solid rgba(32,212,184,0.25);}
-  #s-applied .months{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:start;}
-  #s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
-  #s-applied .mlabel{font-family:'Gilroy',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.1em;color:rgba(255,255,255,0.4);text-align:center;}
-  #s-applied .mlabel.peak{color:#CC2BFB;}
-  #s-applied .jcard{height:112px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:12px 13px;display:flex;flex-direction:column;position:relative;}
-  #s-applied .jcard.cyan{border-top-color:#1FCEFF;}
-  #s-applied .jcard.purp{border-top-color:#CC2BFB;}
-  #s-applied .jcard.teal{border-top-color:#20D4B8;}
-  #s-applied .jcard .nm{font-family:'Gilroy',sans-serif;font-weight:800;font-size:13px;color:#fff;line-height:1.12;padding-right:30px;}
-  #s-applied .jcard .hk{font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.55);margin-top:6px;line-height:1.32;flex:1;}
-  #s-applied .jcard .cds{display:flex;gap:5px;align-items:center;justify-content:space-between;}
-  #s-applied .jcard .rwd{position:absolute;top:11px;right:12px;display:flex;gap:4px;align-items:center;}
-  #s-applied .jcard .coinic{width:13px;height:13px;display:inline-block;}
-  #s-applied .jcard .xp{font-family:'Gilroy',sans-serif;font-size:8px;font-weight:800;letter-spacing:0.03em;color:#fff;background:#CC2BFB;border-radius:4px;padding:1px 4px;line-height:1.4;}
-  #s-applied .jcard .ic2{width:16px;height:16px;display:inline-block;vertical-align:middle;}
-  #s-applied .jleg{display:flex;gap:18px;align-items:center;justify-content:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;}
-  #s-applied .jleg .it{display:flex;align-items:center;gap:6px;}
-  #s-applied .jleg .ic2{width:14px;height:14px;}
-  #s-applied .gt-b{background:linear-gradient(135deg,#0082FF 0%,#1FCEFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-</style>
+#s-applied .pad{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 56px;z-index:2;}
+#s-applied .h{margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;}
+#s-applied .sub{margin-top:14px;font-family:'Gilroy',sans-serif;font-size:20px;font-weight:300;color:var(--muted);max-width:1040px;line-height:1.65;}
+#s-applied .ic{width:16px;height:16px;display:inline-block;vertical-align:middle;}
+#s-applied .jrny{flex:1;display:flex;flex-direction:column;justify-content:flex-start;gap:12px;margin-top:32px;}
+#s-applied .pband{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;}
+#s-applied .pseg{font-family:'Gilroy',sans-serif;padding:9px 22px 9px 12px;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;clip-path:polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);}
+#s-applied .pseg.c{grid-column:span 4;background:rgba(31,206,255,0.14);color:var(--cyan);}
+#s-applied .pseg.p{grid-column:span 2;background:rgba(204,43,251,0.18);color:var(--purp);}
+#s-applied .pseg.t{grid-column:span 2;background:rgba(32,212,184,0.14);color:#20D4B8;}
+#s-applied .months{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;align-items:start;}
+#s-applied .mcol{display:flex;flex-direction:column;gap:8px;}
+#s-applied .mlabel{display:none;}
+#s-applied .j-card{min-height:130px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-top:2px solid rgba(255,255,255,0.12);border-radius:12px;padding:18px 14px 13px;display:flex;flex-direction:column;}
+#s-applied .j-card.cyan{border-top-color:var(--cyan);}
+#s-applied .j-card.purp{border-top-color:var(--purp);}
+#s-applied .j-card.teal{border-top-color:#20D4B8;}
+#s-applied .j-card .nm{font-family:'Gilroy',sans-serif;font-weight:800;font-size:13.5px;color:#fff;line-height:1.15;}
+#s-applied .j-card .hk{font-family:'Gilroy',sans-serif;font-size:11.5px;color:rgba(255,255,255,0.6);margin-top:7px;line-height:1.4;flex:1;}
+#s-applied .j-card{position:relative;}
+#s-applied .j-card .cds{display:flex;gap:5px;align-items:center;margin-top:6px;}
+#s-applied .j-card .rwd{position:absolute;top:10px;right:11px;display:flex;gap:4px;align-items:center;}
+#s-applied .j-card .coinic{width:13px;height:13px;display:inline-block;}
+#s-applied .j-card .xp{font-family:'Gilroy',sans-serif;font-size:8px;font-weight:800;letter-spacing:0.03em;color:#fff;background:var(--purp);border-radius:4px;padding:1px 4px;line-height:1.4;}
+#s-applied .j-card .nm{padding-right:32px;}
+#s-applied .jleg{position:absolute;left:72px;bottom:44px;display:inline-flex;gap:16px;align-items:center;font-family:'Gilroy',sans-serif;font-size:11px;color:rgba(255,255,255,0.65);padding:8px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;z-index:3;}
+#s-applied .jleg .it{display:flex;align-items:center;gap:7px;}</style>
+<div class="slide" id="s-applied">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">07 / 10</div>
-  <div class="pad2">
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">07 / 12</div>
+
+  <div class="pad">
     <div style="flex-shrink:0;">
       <span class="tag" data-en="The CRM plan" data-fr="Le plan CRM">The CRM plan</span>
-      <div class="h2" data-i18n="html" data-en-html="The build-up to <span class='gt'>La Défense, and beyond.</span>" data-fr-html="La montée vers <span class='gt'>La Défense, et au-delà.</span>">The build-up to <span class="gt">La Défense, and beyond.</span></div>
-      <p class="sub2" data-en="Here it is in action for you." data-fr="Voici notre proposition en action pour vous.">Here it is in action for you.</p>
+      <div class="h" data-i18n="html" data-en-html="The road to <span class='gt'>La Défense and beyond.</span>" data-fr-html="La route vers <span class='gt'>La Défense, et au-delà.</span>">The road to <span class="gt">La Défense and beyond.</span></div>
+      <p class="sub" data-en="Here's an example of Gims's Fanverse in action, from his first stream to the next tour." data-fr="Voici un exemple du Fanverse de Gims en action, du premier stream à la prochaine tournée.">Here&rsquo;s an example of Gims&rsquo;s Fanverse in action, from his first stream to the next tour.</p>
     </div>
+
     <div class="jrny">
       <div class="pband">
-        <div class="pseg c" data-en="Build-up · Jun→Nov" data-fr="Montée en puissance · Juin→Nov">Build-up · Jun→Nov</div>
-        <div class="pseg p" data-en="Concerts · Dec" data-fr="Concerts · Déc">Concerts · Dec</div>
-        <div class="pseg t" data-en="After the shows · Jan→" data-fr="Après les concerts · Jan→">After the shows · Jan→</div>
+        <div class="pseg c" data-en="Build-up · Jun - Nov" data-fr="Mise en route · juin - nov">Build-up &middot; Jun - Nov</div>
+        <div class="pseg p" data-en="Concerts · Dec" data-fr="Les concerts · déc">Concerts &middot; Dec</div>
+        <div class="pseg t" data-en="After the shows · Jan - onwards" data-fr="Après les concerts · janvier - et après">After the shows &middot; Jan - onwards</div>
       </div>
       <div class="months">
         <div class="mcol">
           <div class="mlabel">JUN</div>
-          <div class="jcard cyan"><div class="nm">Real Fan</div><div class="hk" data-en="Fans verify their fandom to join Gims' Fanverse" data-fr="Les fans vérifient leur fidélité pour rejoindre le Fanverse de Gims">Fans verify their fandom to join Gims' Fanverse</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard cyan"><div class="nm" data-en="Invite Friends" data-fr="Inviter des amis">Invite Friends</div><div class="hk" data-en="Fans bring friends in and earn coins for each one" data-fr="Les fans invitent leurs amis et gagnent des coins pour chacun">Fans bring friends in and earn coins for each one</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Carpe Diem climb" data-fr="Carpe Diem climb">Carpe Diem climb</div><div class="hk" data-en="Link Spotify, earn coins per stream" data-fr="Connecte Spotify, gagne des coins par écoute">Link Spotify, earn coins per stream</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Sapés crew" data-fr="La crew des sapés">Sapés crew</div><div class="hk" data-en="Bring your crew in, both earn coins" data-fr="Ramène ta crew, gagnez des coins tous les deux">Bring your crew in, both earn coins</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
         </div>
         <div class="mcol">
-          <div class="mlabel">JUL</div>
-          <div class="jcard cyan"><div class="nm">Music</div><div class="hk" data-en="Fans stream Gims' catalogue directly in-app" data-fr="Les fans streament le catalogue de Gims directement dans l'app">Fans stream Gims' catalogue directly in-app</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></div></div>
-          <div class="jcard cyan"><div class="nm" data-en="Social Share" data-fr="Partage social">Social Share</div><div class="hk" data-en="Fans share the Fanverse and tag Gims to earn coins" data-fr="Les fans partagent le Fanverse et taguent Gims pour gagner des coins">Fans share the Fanverse and tag Gims to earn coins</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="mlabel">JUL/AUG</div>
+          <div class="j-card cyan"><div class="nm" data-en="Sunglasses hunt" data-fr="Chasse aux lunettes">Sunglasses hunt</div><div class="hk" data-en="Scan clues, find digital sunglasses hidden around town, win your own pair" data-fr="Scanne les indices, trouve les lunettes digitales cachées en ville, gagne ta paire">Scan clues, find digital sunglasses hidden around town, win your own pair</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Bella tempo" data-fr="Bella tempo">Bella tempo</div><div class="hk" data-en="Tap along to Bella, prove your rhythm" data-fr="Tape en rythme sur Bella, prouve ton tempo">Tap along to Bella, prove your rhythm</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
-          <div class="mlabel">AUG</div>
-          <div class="jcard cyan"><div class="nm">Magic Quest</div><div class="hk" data-en="Fans climb a free XP lane toward exclusive beats" data-fr="Les fans grimpent une voie XP gratuite vers des beats exclusifs">Fans climb a free XP lane toward exclusive beats</div><div class="cds"><div class="rwd"><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard cyan"><div class="nm">Magic Lens</div><div class="hk" data-en="Fans scan Gims releases and merch to prove their fandom" data-fr="Les fans scannent les sorties et le merch de Gims pour prouver leur fidélité">Fans scan Gims releases and merch to prove their fandom</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="mlabel">SEPT</div>
+          <div class="j-card cyan"><div class="nm" data-en="Gims tastes" data-fr="Les goûts de Gims">Gims tastes</div><div class="hk" data-en="Discover the inspirations behind his sound" data-fr="Découvre les inspirations derrière son son">Discover the inspirations behind his sound</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
-          <div class="mlabel">SEP</div>
-          <div class="jcard cyan"><div class="nm" data-en="Tickets" data-fr="Billets">Tickets</div><div class="hk" data-en="Top fans unlock the concert presale" data-fr="Les meilleurs fans débloquent la prévente du concert">Top fans unlock the concert presale</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
+          <div class="mlabel">OCT/NOV</div>
+          <div class="j-card cyan"><div class="nm" data-en="Show vote" data-fr="Vote du show">Show vote</div><div class="hk" data-en="Vote one track Gims plays at La Défense" data-fr="Vote un morceau que Gims joue à La Défense">Vote one track Gims plays at La Défense</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="j-card cyan"><div class="nm" data-en="Golden ticket" data-fr="Golden ticket">Golden ticket</div><div class="hk" data-en="Top fans get early access to La Défense seats" data-fr="Les top fans accèdent en avant-première aux places de La Défense">Top fans get early access to La Défense seats</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
         </div>
         <div class="mcol">
-          <div class="mlabel peak">★ OCT</div>
-          <div class="jcard purp"><div class="nm" data-en="Mystery Box" data-fr="Mystery Box">Mystery Box</div><div class="hk" data-en="Select lucky fans receive the album as a gift" data-fr="Quelques fans chanceux reçoivent l'album en cadeau">Select lucky fans receive the album as a gift</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard purp"><div class="nm" data-en="Events" data-fr="Events">Events</div><div class="hk" data-en="A launch listening session with Gims' Fanverse" data-fr="Une session d'écoute de lancement avec le Fanverse de Gims">A launch listening session with Gims' Fanverse</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
-          <div class="jcard purp"><div class="nm" data-en="Collectibles" data-fr="Collectibles">Collectibles</div><div class="hk" data-en="A set of digital collectibles made for Gims' Fanverse" data-fr="Un set de collectibles numériques pour le Fanverse de Gims">A set of digital collectibles made for Gims' Fanverse</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
-          <div class="jcard purp"><div class="nm">Magic Unlimited</div><div class="hk" data-en="Paying fans unlock behind-the-scenes content on the album creation" data-fr="Les fans payants débloquent les coulisses de la création de l'album">Paying fans unlock behind-the-scenes content on the album creation</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></div></div>
+          <div class="mlabel bercy">&#9733; DEC</div>
+          <div class="j-card purp"><div class="nm" data-en="Final countdown" data-fr="Compte à rebours">Final countdown</div><div class="hk" data-en="Daily drops the week before La Défense" data-fr="Drops quotidiens la semaine avant La Défense">Daily drops the week before La Défense</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="City challenge" data-fr="Défi des villes">City challenge</div><div class="hk" data-en="Group selfie at La Défense wins a digital collectible" data-fr="Selfie de groupe à La Défense = collectible digital">Group selfie at La Défense wins a digital collectible</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
         </div>
         <div class="mcol">
-          <div class="mlabel">NOV</div>
-          <div class="jcard teal"><div class="nm">Talent Faves</div><div class="hk" data-en="Gims shares his inspirations behind the album" data-fr="Gims partage ses inspirations derrière l'album">Gims shares his inspirations behind the album</div><div class="cds"><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
-          <div class="jcard teal"><div class="nm" data-en="Store" data-fr="Store">Store</div><div class="hk" data-en="Limited edition merch dropped uniquely for Magic fans" data-fr="Merch en édition limitée drop exclusivement pour les fans Magic">Limited edition merch dropped uniquely for Magic fans</div><div class="cds"><svg class="ic2" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="mlabel bercy">&#9733; DEC</div>
+          <div class="j-card purp"><div class="nm" data-en="Collect at La Défense" data-fr="Retrait à La Défense">Collect at La Défense</div><div class="hk" data-en="Order merch ahead, collect on the night" data-fr="Commande le merch en avance, récupère le soir J">Order merch ahead, collect on the night</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+          <div class="j-card purp"><div class="nm" data-en="Encore unlock" data-fr="Encore unlock">Encore unlock</div><div class="hk" data-en="Scan your stub, get a free drink" data-fr="Scanne ton billet, gagne un verre offert">Scan your stub, get a free drink</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
         </div>
         <div class="mcol">
-          <div class="mlabel">DEC</div>
-          <div class="jcard teal"><div class="nm">Magic Quest</div><div class="hk" data-en="A premium track where each level unlocks the chance to attend a meet & greet" data-fr="Un parcours premium où chaque niveau débloque la chance d'assister à un meet & greet">A premium track where each level unlocks the chance to attend a meet &amp; greet</div><div class="cds"><div class="rwd"><span class="xp">XP</span></div><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg></div></div>
+          <div class="mlabel">JAN</div>
+          <div class="j-card teal"><div class="nm" data-en="Backstage pass" data-fr="Backstage pass">Backstage pass</div><div class="hk" data-en="Backstage with Gims, on Magic Unlimited" data-fr="En coulisses avec Gims, sur Magic Unlimited">Backstage with Gims, on Magic Unlimited</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg></div></div>
+          <div class="j-card teal"><div class="nm" data-en="Ceinture noire drop" data-fr="Drop ceinture noire">Ceinture noire drop</div><div class="hk" data-en="A ceinture-noire-tier drop, link to checkout" data-fr="Un drop tier ceinture noire, lien direct au checkout">A ceinture-noire-tier drop, link to checkout</div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+        </div>
+        <div class="mcol">
+          <div class="mlabel">FEB</div>
+          <div class="j-card teal"><div class="nm" data-en="Stream club" data-fr="Stream club">Stream club</div><div class="hk" data-en="Stream his catalogue, earn coins for every play" data-fr="Streame son catalogue, gagne des coins à chaque écoute">Stream his catalogue, earn coins for every play</div><div class="rwd"><svg class="coinic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#FFC832" stroke="#B97A09" stroke-width="1"/><circle cx="8" cy="8" r="6.9" fill="none" stroke="#FFE08A" stroke-width="0.7"/><path d="M8 3.7 C8.5 6.4 9.6 7.5 12.3 8 C9.6 8.5 8.5 9.6 8 12.3 C7.5 9.6 6.4 8.5 3.7 8 C6.4 7.5 7.5 6.4 8 3.7 Z" fill="#B97A09"/></svg><span class="xp">XP</span></div><div class="cds"><svg class="ic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg></div></div>
         </div>
       </div>
       <div class="jleg">
-        <span style="color:rgba(255,255,255,0.35);font-weight:700;letter-spacing:0.1em;" data-en="DRIVES" data-fr="MOTEURS">DRIVES</span>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg> <span data-en="Engagement" data-fr="Engagement">Engagement</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg> <span data-en="Tickets" data-fr="Billets">Tickets</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg> <span data-en="Merch" data-fr="Merch">Merch</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg> <span data-en="Premium" data-fr="Premium">Premium</span></div>
-        <div class="it"><svg class="ic2" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg> <span data-en="Streams" data-fr="Streams">Streams</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M8 0 C9 5 11 7 16 8 C11 9 9 11 8 16 C7 11 5 9 0 8 C5 7 7 5 8 0 Z" fill="#1FCEFF"/><path d="M13.5 1.5 C13.8 2.7 14.3 3.2 15.5 3.5 C14.3 3.8 13.8 4.3 13.5 5.5 C13.2 4.3 12.7 3.8 11.5 3.5 C12.7 3.2 13.2 2.7 13.5 1.5 Z" fill="#1FCEFF" opacity="0.55"/></svg> <span data-en="Engagement" data-fr="Engagement">Engagement</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 5 a1.5 1.5 0 0 1 1.5 -1.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v2 a1.5 1.5 0 0 0 0 3 v2 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v-2 a1.5 1.5 0 0 0 0 -3 Z" fill="#FFC832"/><line x1="9" y1="5" x2="9" y2="11" stroke="#0D1B42" stroke-width="0.9" stroke-dasharray="0.8 1.1"/></svg> <span data-en="Tickets" data-fr="Billets">Tickets</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M3 6 h10 v8 a1.2 1.2 0 0 1 -1.2 1.2 h-7.6 a1.2 1.2 0 0 1 -1.2 -1.2 Z" fill="#FD3E84"/><path d="M5.5 6 V4.5 a2.5 2.5 0 0 1 5 0 V6" fill="none" stroke="#FD3E84" stroke-width="1.4" stroke-linecap="round"/></svg> <span data-en="Merch" data-fr="Merch">Merch</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><path d="M2 11.5 L3.2 5 L6.2 8 L8 4 L9.8 8 L12.8 5 L14 11.5 Z M2 12.4 H14 V14 H2 Z" fill="#20D4B8"/><circle cx="3.2" cy="5" r="0.7" fill="#0D1B42"/><circle cx="8" cy="4" r="0.8" fill="#0D1B42"/><circle cx="12.8" cy="5" r="0.7" fill="#0D1B42"/></svg> <span data-en="Premium" data-fr="Premium">Premium</span></div>
+        <div class="it"><svg class="ic" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.8" fill="none" stroke="#0082FF" stroke-width="1.5"/><path d="M6.3 5.2 L11.5 8 L6.3 10.8 Z" fill="#0082FF"/></svg> <span data-en="Streams" data-fr="Streams">Streams</span></div>
       </div>
     </div>
+
   </div>
 </div>
 </div>
@@ -2197,7 +2203,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="slide" id="s8">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">08 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">08 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;padding:60px 0px 60px 80px;gap:24px;">
     <!-- Left -->
@@ -2206,8 +2212,8 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;max-width:52%;" data-i18n="html" data-en-html="Know your fans and<br><span class='gt'>reach them instantly</span>" data-fr-html="Connaissez vos fans,<br><span class='gt'>touchez-les instantanément</span>">
         Know your fans and<br><span class="gt">reach them instantly</span>
       </div>
-      <p class="body-shrink-mobile" style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:716px;" data-en="You've seen what fans experience. Here's what Gims's team sees in return. Magic Pulse turns every signal into a story: who each fan is, what they love, how they feel. So every outreach knows exactly where to land." data-fr="Vous avez vu ce que les fans vivent. Voici ce que l'équipe de Gims voit en retour. Magic Pulse transforme chaque signal en histoire : qui est chaque fan, ce qu'il aime, ce qu'il ressent. Pour que chaque message atteigne exactement sa cible.">
-        You've seen what fans experience. Here's what Gims's team sees in return. Magic Pulse turns every signal into a story: who each fan is, what they love, how they feel. So every outreach knows exactly where to land.
+      <p class="body-shrink-mobile" style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:716px;" data-en="You've seen what fans experience. Here's what you and your team see in return: 1st-party fan data you own. Magic Pulse turns every signal into a story — who each fan is, what they love, how they feel — so every outreach knows exactly where to land." data-fr="Vous avez vu ce que les fans vivent. Voici ce que vous et votre équipe voyez en retour : des données fans 1st-party qui vous appartiennent. Magic Pulse transforme chaque signal en histoire — qui est chaque fan, ce qu'il aime, ce qu'il ressent — pour que chaque message atteigne exactement sa cible.">
+        You've seen what fans experience. Here's what you and your team see in return: 1st-party fan data you own. Magic Pulse turns every signal into a story — who each fan is, what they love, how they feel — so every outreach knows exactly where to land.
       </p>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:4px;max-width:51%;">
         <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
@@ -2215,7 +2221,7 @@ body.present-mode #present-arrows { display:flex !important; }
           <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Mood dashboard</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: see how your audience feels right now</span>" data-fr-html="<span style='font-weight:700;'>Tableau de bord d'humeur</span><span style='font-weight:300;color:var(--muted);'> : voyez comment vos fans se sentent en ce moment</span>"><span style="font-weight:700;">Mood dashboard</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: see how your audience feels right now</span></div>
         </div>
         <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
-          <div style="width:8px;height:8px;border-radius:50%;background:#8C3CFF;flex-shrink:0;"></div>
+          <div style="width:8px;height:8px;border-radius:50%;background:#CC2BFB;flex-shrink:0;"></div>
           <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Discovery map</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: know who your superfans are, not just your followers</span>" data-fr-html="<span style='font-weight:700;'>Carte de découverte</span><span style='font-weight:300;color:var(--muted);'> : comprenez qui sont vraiment vos fans</span>"><span style="font-weight:700;">Discovery map</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: know who your superfans are, not just your followers</span></div>
         </div>
         <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
@@ -2246,13 +2252,15 @@ body.present-mode #present-arrows { display:flex !important; }
 <!-- ═══════════════════════════════════════
   S-SUPERFANS — YOUR FANVERSE, YOUR FANS
 ═══════════════════════════════════════ -->
+
+
 <!-- ═══════════════════════════════════════
   S11 — INCREASE EVERY REVENUE STREAM
 ═══════════════════════════════════════ -->
 <div class="slide" id="s11">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">12 / 13</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">09 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 80px 88px;">
     <div style="flex-shrink:0;margin-bottom:36px;">
@@ -2260,7 +2268,7 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Increase every <span class='gpu-t'>revenue stream</span>" data-fr-html="Augmentez toutes vos <span class='gpu-t'>sources de revenus</span>">
         Increase every <span class="gpu-t">revenue stream</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:760px;" data-en="Magic is built to fuel your career: driving streams, ticket sales, merch revenue and the long-term fan engagement that turns casual listeners into loyal superfans." data-fr="Magic est conçu pour alimenter votre carrière : stimuler les streams, les ventes de billets, les revenus merch et l'engagement fan à long terme qui transforme les auditeurs occasionnels en superfans fidèles.">
+      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:760px;" data-en="Magic is built to fuel your career: driving streams, ticket sales, merch revenue and the long-term fan engagement that turns casual listeners into loyal superfans." data-fr="Magic alimente votre carrière : streams, billets, merch, engagement fan. Et transforme les auditeurs occasionnels en superfans fidèles.">
         Magic is built to fuel your career: driving streams, ticket sales, merch revenue and the long-term fan engagement that turns casual listeners into loyal superfans.
       </p>
     </div>
@@ -2294,18 +2302,17 @@ body.present-mode #present-arrows { display:flex !important; }
         <div style="font-size:16px;color:var(--muted);line-height:1.5;" data-en="7× more engagement vs social, because your Fanverse is built to hold attention." data-fr="7× plus d'engagement vs les réseaux sociaux, parce que votre Fanverse est conçu pour retenir l'attention.">7× more engagement vs social, because your Fanverse is built to hold attention.</div>
       </div>
     </div>
-    <div style="position:absolute;left:80px;bottom:48px;font-size:11px;color:rgba(255,255,255,0.18);text-align:left;" data-en="Sources: Sesh, Weverse, Fave…" data-fr="Sources : Sesh, Weverse, Fave…">Sources: Sesh, Weverse, Fave…</div>
+    <div style="position:absolute;left:80px;bottom:48px;font-size:11px;color:rgba(255,255,255,0.18);text-align:left;" data-en="Sources: Sesh, Weverse, Fave…" data-fr="Sources: Sesh, Weverse, Fave…">Sources: Sesh, Weverse, Fave…</div>
   </div>
 </div>
 </div>
-
 <!-- ═══════════════════════════════════════
   S10 — GET PAID
 ═══════════════════════════════════════ -->
 <div class="slide" id="s10">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">12 / 16</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">10 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 80px 48px;">
     <div style="flex-shrink:0;margin-bottom:10px;">
@@ -2313,12 +2320,12 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.02em;" data-i18n="html" data-en-html="Get paid for every fan <span class='gt'>you bring in</span>" data-fr-html="Soyez payé pour chaque fan <span class='gt'>que vous amenez</span>">
         Get paid for every fan <span class="gt">you bring in</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:1100px;" data-en="Every time a fan joins your Fanverse, you earn. Every time they subscribe to Magic, you earn again. The bigger your fanbase grows, the more your revenue does too." data-fr="Chaque fois qu'un fan rejoint votre Fanverse, vous gagnez. Chaque fois qu'il s'abonne à Magic, vous gagnez encore. Plus votre base fan grandit, plus vos revenus augmentent.">
+      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:1000px;" data-en="Every time a fan joins your Fanverse, you earn. Every time they subscribe to Magic, you earn again. The bigger your fanbase grows, the more your revenue does too." data-fr="Chaque fois qu'un fan rejoint votre Fanverse, vous gagnez. Chaque fois qu'il s'abonne à Magic, vous gagnez encore. Plus votre base fan grandit, plus vos revenus augmentent.">
         Every time a fan joins your Fanverse, you earn. Every time they subscribe to Magic, you earn again. The bigger your fanbase grows, the more your revenue does too.
       </p>
       <p style="margin-top:8px;font-size:18px;font-weight:700;color:#fff;letter-spacing:0.03em;" data-en="See for yourself with the revenue simulator." data-fr="Voyez par vous-même avec le simulateur de revenus.">See for yourself with the revenue simulator.</p>
     </div>
-    <!-- Revenue Simulator -->
+    <!-- Revenue simulator -->
     <div style="display:flex;flex-direction:column;flex:1;margin-top:28px;align-items:center;">
       <div style="display:flex;flex-direction:column;padding:0 36px 24px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;width:100%;max-width:1100px;flex:1;">
         <div style="font-family:'Gilroy',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.6);text-transform:uppercase;text-align:center;padding:24px 0 24px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:24px;" data-en="Revenue simulator" data-fr="Simulateur de revenus">Revenue simulator</div>
@@ -2432,11 +2439,10 @@ body.present-mode #present-arrows { display:flex !important; }
   </div>
 </div>
 </div>
-
 <div class="slide" id="s-superfans">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">09 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">11 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;align-items:center;padding:80px 80px 80px 100px;gap:60px;">
     <!-- Left: Text -->
@@ -2451,9 +2457,9 @@ body.present-mode #present-arrows { display:flex !important; }
       </p>
       <p style="font-size:22px;font-weight:700;letter-spacing:0.03em;" data-i18n="html" data-en-html="This is your Fanverse. <span style='color:#fff'>They've earned it.</span>" data-fr-html="Voici votre Fanverse. <span style='color:#fff'>Ils l'ont mérité.</span>">This is your Fanverse. <span style="color:#fff">They've earned it.</span></p>
     </div>
-    <!-- Right: Gims image — TODO: swap placeholder for a real Gims artist photo. Currently using a leftover Celine-era photo as placeholder. Same mask/styling as s1. -->
     <div style="position:absolute;top:0;right:0;bottom:0;width:55%;overflow:hidden;">
-      <img src="Assets/Deck Edits/67960554_10156312576851651_857208479381716992_n.jpg" alt="Gims (placeholder — replace with real Gims photo)" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);">
+      <img src="Assets/MMCJUWLHLRCNXL4UAFHPH36IM4.jpg" alt="Gims" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.2) 15%,rgba(0,0,0,0.6) 30%,rgba(0,0,0,0.9) 45%,black 60%,black 100%);">
+      <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.55) 30%,rgba(13,27,66,0.2) 45%,transparent 60%);"></div>
     </div>
   </div>
 </div>
@@ -2465,15 +2471,15 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="slide" id="s13">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">10 / 10</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">12 / 12</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px;text-align:center;">
     <span class="tag" style="margin-bottom:24px;align-self:center;" data-en="The flywheel" data-fr="Cercle vertueux">The flywheel</span>
-    <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-0.025em;max-width:960px;" data-i18n="html" data-en-html="Room for every fan.<br><span class='gt'>A bond that lasts.</span>" data-fr-html="De la place pour chaque fan.<br><span class='gt'>Un lien qui dure.</span>">
-      Room for every fan.<br><span class="gt">A bond that lasts.</span>
+    <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-0.025em;max-width:960px;" data-i18n="html" data-en-html="Bigger fandoms.<br><span class='gt'>Bigger revenue.</span>" data-fr-html="Des fandoms plus grands.<br><span class='gt'>Plus de revenus.</span>">
+      Bigger fandoms.<br><span class="gt">Bigger revenue.</span>
     </div>
-    <p style="margin-top:18px;font-size:20px;line-height:1.6;font-weight:300;color:var(--muted);max-width:760px;" data-en="Every feature in Magic feeds the next. Fans engage, their devotion deepens, and the bond with Gims grows with every concert, every drop, every moment shared." data-fr="Chaque fonctionnalité de Magic alimente la suivante. Les fans s'engagent, leur dévouement grandit, et le lien avec Gims s'approfondit à chaque concert, chaque drop, chaque moment partagé.">
-      Every feature in Magic feeds the next. Fans engage, their devotion deepens, and the bond with Gims grows with every concert, every drop, every moment shared.
+    <p style="margin-top:18px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:760px;" data-en="Every feature in Magic feeds the next. Fans engage, you capture data, partners see results, and your career grows, release after release." data-fr="Chaque fonctionnalité de Magic alimente la suivante. Les fans s'engagent, vous captez les données, les partenaires voient les résultats, et votre carrière grandit, sortie après sortie.">
+      Every feature in Magic feeds the next. Fans engage, you capture data, partners see results, and your career grows, release after release.
     </p>
 
     <div style="display:flex;flex-direction:column;gap:14px;margin-top:32px;width:100%;max-width:760px;">
@@ -2481,10 +2487,10 @@ body.present-mode #present-arrows { display:flex !important; }
         <div style="width:46px;height:46px;border-radius:12px;background:rgba(31,206,255,0.12);border:1px solid rgba(31,206,255,0.25);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(31,206,255,0.12);flex-shrink:0;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 18l5-5 3 3 8-10" stroke="rgba(31,206,255,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="rgba(31,206,255,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>A place for every fan</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: ~80,000 fans across 2 nights at La Défense. Magic opens a space for them, and for the ones who couldn't be there too.</span>" data-fr-html="<span style='font-weight:700;'>Une place pour chaque fan</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : ~80 000 fans sur 2 soirs à La Défense. Magic leur ouvre un espace, ainsi qu'à ceux qui n'ont pas pu en être.</span>"><span style="font-weight:700;">A place for every fan</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: ~80,000 fans across 2 nights at La Défense. Magic opens a space for them, and for the ones who couldn't be there too.</span></div>
+        <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>A place for every fan</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: La Défense Arena holds 40,000. Across two nights on 16–17 December, that's 80,000 fans. Magic opens a space for them, and for the millions who couldn't be there too.</span>" data-fr-html="<span style='font-weight:700;'>Une place pour chaque fan</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : La Défense Arena accueille 40 000 fans. Sur deux soirs, les 16 et 17 décembre, cela représente 80 000 fans. Magic leur ouvre un espace, ainsi qu'aux millions qui n'ont pas pu en être.</span>"><span style="font-weight:700;">A place for every fan</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: La Défense Arena holds 40,000. Across two nights on 16–17 December, that's 80,000 fans. Magic opens a space for them, and for the millions who couldn't be there too.</span></div>
       </div>
       <div style="display:flex;align-items:center;gap:16px;padding:18px 24px;border-radius:14px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);text-align:left;">
-        <div style="width:46px;height:46px;border-radius:12px;background:rgba(140,60,255,0.15);border:1px solid rgba(140,60,255,0.32);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(140,60,255,0.15);flex-shrink:0;">
+        <div style="width:46px;height:46px;border-radius:12px;background:rgba(204,43,251,0.15);border:1px solid rgba(204,43,251,0.32);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(204,43,251,0.15);flex-shrink:0;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1.5" fill="rgba(220,100,255,0.9)"/><rect x="10" y="7" width="4" height="14" rx="1.5" fill="rgba(220,100,255,0.9)"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="rgba(220,100,255,0.9)"/></svg>
         </div>
         <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Every moment shared</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: from pre-show anticipation to the final encore and the months after, every fan lives every beat alongside Gims, ticket or not.</span>" data-fr-html="<span style='font-weight:700;'>Chaque moment est partagé</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : des moments imaginés avant les concerts au dernier rappel puis aux mois qui suivent, chaque fan vit un instant unique avec Gims, avec ou sans billet.</span>"><span style="font-weight:700;">Every moment shared</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: from pre-show anticipation to the final encore and the months after, every fan lives every beat alongside Gims, ticket or not.</span></div>
@@ -2493,7 +2499,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <div style="width:46px;height:46px;border-radius:12px;background:rgba(0,130,255,0.15);border:1px solid rgba(0,130,255,0.3);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(0,130,255,0.12);flex-shrink:0;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="rgba(0,180,255,0.9)" stroke-width="1.8"/><circle cx="17" cy="8" r="3" stroke="rgba(0,180,255,0.9)" stroke-width="1.8"/><path d="M5 20c0-3 2-5 4-5s4 2 4 5M13 20c0-3 2-5 4-5s4 2 4 5" stroke="rgba(0,180,255,0.9)" stroke-width="1.8" stroke-linecap="round"/></svg>
         </div>
-        <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Every bond lasting</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: a lifetime of devotion, nurtured month after month.</span>" data-fr-html="<span style='font-weight:700;'>Chaque lien est durable</span><span style='font-weight:300;color:var(--muted);'> : une vie de partage récurrent, entretenu mois après mois.</span>"><span style="font-weight:700;">Every bond lasting</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: a lifetime of devotion, nurtured month after month.</span></div>
+        <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Every bond owned</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: 1st-party fan data you keep forever, so you can reach the right fans directly, on your terms, for the rest of your career.</span>" data-fr-html="<span style='font-weight:700;'>Chaque lien vous appartient</span><span style='font-weight:300;color:var(--muted);'> : des données fans 1st-party que vous gardez à vie, pour toucher les bons fans en direct, à vos conditions, tout au long de votre carrière.</span>"><span style="font-weight:700;">Every bond owned</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: 1st-party fan data you keep forever, so you can reach the right fans directly, on your terms, for the rest of your career.</span></div>
       </div>
     </div>
 
@@ -2516,7 +2522,7 @@ body.present-mode #present-arrows { display:flex !important; }
 
 <!-- NAV BAR -->
 <nav id="nav">
-  <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:13px;color:rgba(255,255,255,0.28);letter-spacing:0.07em;">✦ Magic — For Artists</div>
+  <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:13px;color:rgba(255,255,255,0.28);letter-spacing:0.07em;">✦ Magic — For Gims</div>
   <div style="display:flex;align-items:center;gap:20px;">
     <button class="nb" id="pb" onclick="prev()">&#8592;</button>
     <div id="dots"></div>
@@ -2551,7 +2557,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <!-- Mobile language bar -->
 <div id="mobile-tap-zone" style="display:none;"></div>
 <div id="mobile-lang-bar" style="display:none;">
-  <span class="mlb-title">✦ Magic — For Artists</span>
+  <span class="mlb-title">✦ Magic — For Gims</span>
   <div class="mlb-btns">
     <button class="mlb-btn active" id="mlb-en">EN</button>
     <button class="mlb-btn" id="mlb-fr">FR</button>
@@ -3113,7 +3119,7 @@ const dots = slides.map((_, idx) => {
 /* ── Language State ── */
 var currentLang = 'en';
 
-/* ── Revenue Simulator ── */
+/* ── Revenue simulator ── */
 function parseReach(v) {
   v = v.trim().toUpperCase().replace(/[€,\s]/g, '');
   if (v.endsWith('M')) return parseFloat(v) * 1e6;
